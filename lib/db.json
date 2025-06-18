@@ -1,0 +1,1536 @@
+{
+  "_id": "683c6f75c1bcf57e6beb9c91",
+  "rfp_id": "4073419769",
+  "rfp_name": "Survey Software RFP",
+  "client_name": "Shutterfly",
+  "openai": {
+    "assistant_id": "asst_RnicDStCw4TPbDyHMDWdW0s1",
+    "vector_store_id": "vs_NqByfyhNd4EEUBSqs0y2defd"
+  },
+  "agents": {
+    "sijian": {
+      "name": "Sijian",
+      "role": "Editor"
+    }
+  },
+  "stage_total": 8,
+  "stage_complete": 8,
+  "created_at": "2025-06-01T11:19:17.032394-04:00",
+  "last_updated_at": "2025-06-01T11:19:17.032394-04:00",
+  "uploads": {
+    "6690dda9dbcdf52439d75ac18e757fa48b9374b2": {
+      "file_id": "6690dda9dbcdf52439d75ac18e757fa48b9374b2",
+      "file_type": "RFP",
+      "folder_path": "shutterfly/4073419769",
+      "filename": "6690dda9dbcdf52439d75ac18e757fa48b9374b2.docx",
+      "display_name": "Surveys RFP.docx",
+      "content_type": "application/msword",
+      "uploader": "sijian",
+      "timestamp": "2025-06-01T11:19:17.034279-04:00"
+    },
+    "534c2f60e105a55a075271b102eb5cf412f7165d": {
+      "file_id": "534c2f60e105a55a075271b102eb5cf412f7165d",
+      "file_type": "RFP_Response",
+      "folder_path": "shutterfly/4073419769",
+      "filename": "534c2f60e105a55a075271b102eb5cf412f7165d.txt",
+      "display_name": "Survey RFP - Vendor 1 response.xlsx",
+      "content_type": "text/html",
+      "uploader": "sijian",
+      "timestamp": "2025-06-01T11:26:17.900561-04:00"
+    },
+    "3f6a586a19cafffe087bbd36f9283ffef401424c": {
+      "file_id": "3f6a586a19cafffe087bbd36f9283ffef401424c",
+      "file_type": "RFP_Response",
+      "folder_path": "shutterfly/4073419769",
+      "filename": "3f6a586a19cafffe087bbd36f9283ffef401424c.txt",
+      "display_name": "Survey RFP - Vendor 2 Response.xlsx",
+      "content_type": "text/html",
+      "uploader": "sijian",
+      "timestamp": "2025-06-01T11:26:17.911546-04:00"
+    },
+    "2e166e3e4bb649542de5b0cd91307a98541eb731": {
+      "file_id": "2e166e3e4bb649542de5b0cd91307a98541eb731",
+      "file_type": "RFP_Response",
+      "folder_path": "shutterfly/4073419769",
+      "filename": "2e166e3e4bb649542de5b0cd91307a98541eb731.txt",
+      "display_name": "Survey RFP Vendor 3 Response.xlsx",
+      "content_type": "text/html",
+      "uploader": "sijian",
+      "timestamp": "2025-06-01T11:26:17.922374-04:00"
+    }
+  },
+  "creator": "sijian",
+  "user_timeline": {
+    "timeline": {
+      "UPLOAD RFP": {
+        "sequence": 1,
+        "user_activities": {
+          "1": {
+            "display_message": "Sijian uploaded",
+            "file_id": "6690dda9dbcdf52439d75ac18e757fa48b9374b2",
+            "file_name": "Surveys RFP.docx",
+            "timestamp": "2025-06-01T11:19:35.658852-04:00",
+            "event": "All"
+          }
+        },
+        "timestamp": "2025-06-01T11:19:35.658852-04:00",
+        "days_later": null,
+        "event": [
+          "All"
+        ]
+      },
+      "INVITE STAKEHOLDERS": {
+        "sequence": 2,
+        "user_activities": {
+          "1": {
+            "display_message": "Sijian successfully invited the agents for his RFP",
+            "success_email": [],
+            "failed_email": [],
+            "timestamp": "2025-06-01T11:24:35.116434-04:00",
+            "event": "All"
+          }
+        },
+        "timestamp": "2025-06-01T11:24:35.116434-04:00",
+        "days_later": "0 days later",
+        "event": [
+          "All"
+        ]
+      },
+      "SET CRITICAL REQUIREMENTS": {
+        "sequence": 3,
+        "user_activities": {
+          "1": {
+            "display_message": "Sijian approved 26 requirments.",
+            "timestamp": "2025-06-01T11:24:59.877693-04:00",
+            "event": "All"
+          }
+        },
+        "timestamp": "2025-06-01T11:24:59.877693-04:00",
+        "days_later": "0 days later",
+        "event": [
+          "All"
+        ]
+      },
+      "ASSIGN WEIGHTS": {
+        "sequence": 4,
+        "user_activities": {
+          "1": {
+            "display_message": "Weights assigned by Sijian.",
+            "timestamp": "2025-06-01T11:26:00.687802-04:00",
+            "event": "All"
+          }
+        },
+        "timestamp": "2025-06-01T11:26:00.687802-04:00",
+        "days_later": "0 days later",
+        "event": [
+          "All"
+        ]
+      },
+      "ENTER BUDGET": {
+        "sequence": 5,
+        "user_activities": {
+          "1": {
+            "display_message": "Sijian added budget",
+            "budget": "$500,000",
+            "timestamp": "2025-06-01T11:26:06.734148-04:00",
+            "event": "All"
+          }
+        },
+        "timestamp": "2025-06-01T11:26:06.734148-04:00",
+        "days_later": "0 days later",
+        "event": [
+          "All"
+        ]
+      },
+      "UPLOAD RPF RESPONSE": {
+        "sequence": 6,
+        "user_activities": {
+          "1": {
+            "display_message": "Sijian uploaded",
+            "file_id": "534c2f60e105a55a075271b102eb5cf412f7165d",
+            "file_name": "Survey RFP - Vendor 1 response.xlsx",
+            "type": "RFP_Response",
+            "timestamp": "2025-06-01T11:39:13.824330-04:00",
+            "event": "All"
+          },
+          "2": {
+            "display_message": "Sijian uploaded",
+            "file_id": "3f6a586a19cafffe087bbd36f9283ffef401424c",
+            "file_name": "Survey RFP - Vendor 2 Response.xlsx",
+            "type": "RFP_Response",
+            "timestamp": "2025-06-01T11:39:13.824330-04:00",
+            "event": "All"
+          },
+          "3": {
+            "display_message": "Sijian uploaded",
+            "file_id": "2e166e3e4bb649542de5b0cd91307a98541eb731",
+            "file_name": "Survey RFP Vendor 3 Response.xlsx",
+            "type": "RFP_Response",
+            "timestamp": "2025-06-01T11:39:13.824330-04:00",
+            "event": "All"
+          }
+        },
+        "timestamp": "2025-06-01T11:39:13.824330-04:00",
+        "days_later": "0 days later",
+        "event": [
+          "All"
+        ]
+      },
+      "IDENTIFY EXISTING SUPPLIERS": {
+        "sequence": 7,
+        "user_activities": {
+          "1": {
+            "display_message": "Sijian added supplier",
+            "suppliers": "Medallia",
+            "timestamp": "2025-06-01T11:40:52.235055-04:00",
+            "event": "All"
+          },
+          "2": {
+            "display_message": "Sijian added supplier",
+            "suppliers": "Questionpro",
+            "timestamp": "2025-06-01T11:40:52.235055-04:00",
+            "event": "All"
+          },
+          "3": {
+            "display_message": "Sijian added supplier",
+            "suppliers": "Forsta",
+            "timestamp": "2025-06-01T11:40:52.235055-04:00",
+            "event": "All"
+          }
+        },
+        "timestamp": "2025-06-01T11:40:52.235055-04:00",
+        "days_later": "0 days later",
+        "event": [
+          "All"
+        ]
+      },
+      "SET EVALUTION CRITERIA": {
+        "sequence": 8,
+        "user_activities": {
+          "1": {
+            "display_message": "Sijian set evalution criteria.",
+            "timestamp": "2025-06-01T11:44:03.425529-04:00",
+            "event": "All"
+          }
+        },
+        "timestamp": "2025-06-01T11:44:03.425529-04:00",
+        "days_later": "0 days later",
+        "event": [
+          "All"
+        ]
+      }
+    },
+    "key_timeline_exists": true,
+    "created_at": "2025-06-01T11:19:35.658035-04:00",
+    "stage_status": {
+      "UPLOAD RFP": "completed",
+      "INVITE STAKEHOLDERS": "completed",
+      "SET CRITICAL REQUIREMENTS": "completed",
+      "ASSIGN WEIGHTS": "completed",
+      "ENTER BUDGET": "completed",
+      "UPLOAD RPF RESPONSE": "completed",
+      "IDENTIFY EXISTING SUPPLIERS": "completed",
+      "SET EVALUTION CRITERIA": "completed"
+    },
+    "stage_complete": 8,
+    "last_updated_at": "2025-06-01T11:44:03.425529-04:00"
+  },
+  "current_stage": 8,
+  "current_stage_name": "SET EVALUTION CRITERIA",
+  "next_stage": null,
+  "save_and_exists": {},
+  "state": "Completed",
+  "updated_at": "2025-06-01T11:44:03.425529-04:00",
+  "rfp_response": {
+    "total_question": 26,
+    "rfp_questions_classified": {
+      "sections": true,
+      "sub_sections": true
+    },
+    "core_business_problem": "The company is seeking survey software to address several internal challenges. Their primary goals are to reduce operational costs, consolidate the number of systems they use, mitigate risks associated with their current processes, and streamline their overall workflows. Essentially, they are looking for a more efficient, cost-effective, and secure way to manage their internal survey needs.",
+    "questions": {
+      "1": {
+        "category": "Functional Requirements",
+        "sub_category": "General Requirements",
+        "question": "Is the system easy to use for both frequent and occasional users, by being easy to learn, intuitive to new or occasional users? Please explain",
+        "is_critical": false,
+        "sample_answer": null,
+        "question_type": "ONE_CHOICE_QUESTION",
+        "companies": {
+          "Medallia": {
+            "answer": "Platform is designed to be easy to use and intuitive. Our reporting includes highly configurable dashboards that are geared toward ease of use and data accessibility for all levels of your organization and can be personalized to the user. These dashboards are known for their intuititve interface, simple but instructive reports, and ability to drive engagement throughout your orgranization. In addition to reporting, our selfservice capabilities are also designed for ease of use with drag-and-drop 'what-you-see-what-you-get' interface. For the survey side, users have the option to use custom HTML or custom CSS, to control UI at pizel level and teherby achieve practivally any functionality and look and feel. In this way, you wull have complete control over UI and branding including font size and colors, foreground/background, buttons, logos, imagery,etc",
+            "result": true,
+            "reasoning_behind_result": "The vendor states that the platform is designed to be easy to use and intuitive for all user levels. They highlight configurable dashboards, a 'what-you-see-what-you-get' interface, and customization options as evidence of ease of use."
+          },
+          "Questionpro": {
+            "answer": "The platform can be a DIY survey tool for those just needing a simple ad-hoc survey by just using our basic question types. We also have QxBot which is our AI tool that allows users to enter a prompt such as \"write a customer feedback survey\" and QxBot will generate a survey of up to 15 questions. In addition, we have numerous templates for various use cases that user can choose from and then edit to suir their situation. https://www.questionpro.com/features/qxbot.html",
+            "result": true,
+            "reasoning_behind_result": "The vendor states that the platform can be used as a DIY tool for simple surveys and offers an AI tool (QxBot) and templates to simplify survey creation, implying ease of use for both frequent and occasional users. The provided link to QxBot is accessible and relevant, further supporting the claim of ease of use through AI-assisted survey generation."
+          },
+          "Forsta": {
+            "answer": "The platform has a GUI (Graphic User Interface) that is designed to be highly intuitive and easy to master. On screen help is available and auto-defaults to open to the section most relevant to the current GUI screen view. A learning management system is also available to provide short tutorial videos on most platform functionality.",
+            "result": true,
+            "reasoning_behind_result": "The vendor states that the platform has an intuitive GUI, on-screen help, and a learning management system with tutorial videos. This directly addresses the question about ease of use for both frequent and occasional users, and ease of learning for new or occasional users."
+          }
+        }
+      },
+      "2": {
+        "category": "Functional Requirements",
+        "sub_category": "General Requirements",
+        "question": "What are your product differentiators? Please provide specific sample/screenshot/documentation",
+        "is_critical": true,
+        "sample_answer": null,
+        "question_type": "ONE_CHOICE_QUESTION",
+        "companies": {
+          "Medallia": {
+            "answer": "We stress the importance of usability throughout our entire offering of products. Whether this be users of reporting who are frequent or occasional, the intuitive nature of our platform allows things to make sense in a simple fashion. The same is true when it comes to those who administer surveys. Our Experience Program and Ad Hoc wizards provide easy and intuitive step by step guidance to launching surveys, associating reporting, and managing all aspects of an enterprise program at scale. see also: https://docs.medallia.com/en/medallia-experience-cloud/feedback/signal-capturing/experience-programs",
+            "result": true,
+            "reasoning_behind_result": "The vendor emphasizes usability and intuitive design as key differentiators. They provide a link to their documentation for Medallia Experience Cloud regarding Experience Programs. The linked content [1, 2, 3, 4, 5, 6, 7, 8, 9] is accessible and relevant, describing the platform's capabilities in capturing and managing feedback, which supports their claim of ease of use and intuitive guidance for launching surveys and managing programs. The documentation details features like intuitive dashboards, signal capturing across various channels, and AI-powered analytics, which align with the vendor's description of their product differentiators. [1, 2, 3, 4, 5]"
+          },
+          "Questionpro": {
+            "answer": "In addition to what laid our in the above response, we also have the capability for complex surveys with logic incorporated. Apart from the basic question types, we also have advanced questions for more complex analysis such as: Conjoint, maxdiff, Van Westerndorp, Gabor Granger, heat maps, and more",
+            "result": false,
+            "reasoning_behind_result": "The vendor lists capabilities for complex surveys and advanced question types as differentiators. However, the question specifically asks for 'specific sample/screenshot/documentation', which the vendor has not provided in their response. Without this supporting evidence, the claim cannot be fully verified as meeting the question's requirements."
+          },
+          "Forsta": {
+            "answer": "The platform is designed to be a powerful, yet simple to use data collection tool. It was built to be fully self service capable, with all functionality available to the user, without the need for vendor involvement. Like many of our competitors, we have grown over the years not just organically, but through the process of Mergers and Acquistion. One element that has set us apart however, is the attitude toward the influx of innovation from our Research and Development teams. Rather than simply bolt-on new pieces, or engineers to work to integrate pieces at the source level. For example, our CAPI, CATI, and Text Analytics functionality all came from acquisition, however every piece of that functionality resides completely within the platform, within the full code-frame.",
+            "result": false,
+            "reasoning_behind_result": "The vendor describes their product differentiators, focusing on ease of use, self-service capabilities, and deep integration of acquired functionalities. However, the question specifically asks for 'specific sample/screenshot/documentation', which the vendor has not provided in their text response. Therefore, the answer is incomplete based on the question's requirements."
+          }
+        }
+      },
+      "3": {
+        "category": "Functional Requirements",
+        "sub_category": "General Requirements",
+        "question": "Can the platform be able to create WCAG 2.0 AA (and section 508) compliant in terms of accessibility?",
+        "is_critical": false,
+        "sample_answer": null,
+        "question_type": "ONE_CHOICE_QUESTION",
+        "companies": {
+          "Medallia": {
+            "answer": "We have a dedicated accessibility team that works on ensuring that our software is able",
+            "result": false,
+            "reasoning_behind_result": "The vendor's response is incomplete. While they state they have a dedicated accessibility team, they do not explicitly confirm that the platform *can create* WCAG 2.0 AA and Section 508 compliant content. The answer ends abruptly with \"is able\", leaving the confirmation missing."
+          },
+          "Questionpro": {
+            "answer": "Yes",
+            "result": true,
+            "reasoning_behind_result": "The vendor explicitly states 'Yes', indicating the platform can create WCAG 2.0 AA (and section 508) compliant surveys."
+          },
+          "Forsta": {
+            "answer": "Yes, we have accessibility compliant survey tempaltes that serve to limit the look and feel and functionality to conform to ADA requirements",
+            "result": true,
+            "reasoning_behind_result": "The vendor explicitly states 'Yes' and explains that they have accessibility compliant survey templates to conform to ADA requirements. While ADA is US-specific, the mention of compliant templates addresses the core of the question about creating accessible content, which aligns with the principles of WCAG 2.0 AA and Section 508."
+          }
+        }
+      },
+      "4": {
+        "category": "Functional Requirements",
+        "sub_category": "General Requirements",
+        "question": "Is your company GDPR compliant?",
+        "is_critical": false,
+        "sample_answer": null,
+        "question_type": "ONE_CHOICE_QUESTION",
+        "companies": {
+          "Medallia": {
+            "answer": "Yes",
+            "result": true,
+            "reasoning_behind_result": "The vendor explicitly states 'Yes', indicating they are GDPR compliant."
+          },
+          "Questionpro": {
+            "answer": "Yes",
+            "result": true,
+            "reasoning_behind_result": "The vendor explicitly states 'Yes', indicating the company is GDPR compliant."
+          },
+          "Forsta": {
+            "answer": "Yes",
+            "result": true,
+            "reasoning_behind_result": "The vendor's response is a direct and affirmative 'Yes'."
+          }
+        }
+      },
+      "5": {
+        "category": "Functional Requirements",
+        "sub_category": "General Requirements",
+        "question": "Can the platform provide a custom domain for customer?",
+        "is_critical": false,
+        "sample_answer": null,
+        "question_type": "ONE_CHOICE_QUESTION",
+        "companies": {
+          "Medallia": {
+            "answer": "We enable the customization of survey URLs to allow customers to brand the URL or make it look like it is coming from the company instead of Medallia. The same applies for emails sent from the platform. All surveys will come from our Cloud service. There will be an additional cost for this service.",
+            "result": true,
+            "reasoning_behind_result": "The vendor confirms that they enable customization of survey URLs to allow customers to brand the URL, which addresses the core of providing a custom domain. They also mention this applies to emails. Although it comes with an additional cost and surveys originate from their cloud service, the capability for a custom-branded domain is present."
+          },
+          "Questionpro": {
+            "answer": "minimum 3 year agreement needed",
+            "result": true,
+            "reasoning_behind_result": "The vendor indicates that a custom domain can be provided, conditional on a minimum 3-year agreement. This confirms the capability exists, albeit with a condition."
+          },
+          "Forsta": {
+            "answer": "Yes",
+            "result": true,
+            "reasoning_behind_result": "The vendor's response is a direct and affirmative 'Yes'."
+          }
+        }
+      },
+      "6": {
+        "category": "Functional Requirements",
+        "sub_category": "General Requirements",
+        "question": "Can the platform send reminders?",
+        "is_critical": false,
+        "sample_answer": null,
+        "question_type": "ONE_CHOICE_QUESTION",
+        "companies": {
+          "Medallia": {
+            "answer": "Conducted with Admin Suite - reminders can be automated",
+            "result": true,
+            "reasoning_behind_result": "The vendor confirms that reminders can be sent and automated using the Admin Suite."
+          },
+          "Questionpro": {
+            "answer": "Yes",
+            "result": true,
+            "reasoning_behind_result": "The vendor explicitly states 'Yes', indicating the platform can send reminders."
+          },
+          "Forsta": {
+            "answer": "Yes, all reminders can be scheduled to be sent automatically at the required time to uncompleted or not yet started surveys",
+            "result": true,
+            "reasoning_behind_result": "The vendor's response is 'Yes' and they elaborate that reminders can be scheduled and sent automatically."
+          }
+        }
+      },
+      "7": {
+        "category": "Functional Requirements",
+        "sub_category": "Sample/Recruiting",
+        "question": "Can the platform upload background variables about participants?",
+        "is_critical": false,
+        "sample_answer": null,
+        "question_type": "ONE_CHOICE_QUESTION",
+        "companies": {
+          "Medallia": {
+            "answer": "Variables are a common way in which we segment. This is typically accomplished within our invitation file and can be controlled by your importer.",
+            "result": true,
+            "reasoning_behind_result": "The vendor states that uploading background variables is a common way they segment and that this is typically accomplished within the invitation file and controlled by the customer's importer. This confirms the capability."
+          },
+          "Questionpro": {
+            "answer": "Yes",
+            "result": true,
+            "reasoning_behind_result": "The vendor explicitly states 'Yes', indicating the platform can upload background variables about participants."
+          },
+          "Forsta": {
+            "answer": "The background variables about participants or respondants list must be in the form of a delimited text file, with the column headings in the first row. The delimiter used can be a tab, comma, or custom. This file can for example be exported from a spreadsheet application such as Excel  by using the save as function and choosing .txt.",
+            "result": true,
+            "reasoning_behind_result": "The vendor's response explains the method and format for uploading background variables (delimited text file), which implies the capability exists."
+          }
+        }
+      },
+      "8": {
+        "category": "Functional Requirements",
+        "sub_category": "Sample/Recruiting",
+        "question": "Can the platform upload email lists?",
+        "is_critical": false,
+        "sample_answer": null,
+        "question_type": "ONE_CHOICE_QUESTION",
+        "companies": {
+          "Medallia": {
+            "answer": "Email lists can be automated via data integration or uploaded manually",
+            "result": true,
+            "reasoning_behind_result": "The vendor explicitly states that email lists can be uploaded, either through automation via data integration or manually."
+          },
+          "Questionpro": {
+            "answer": "Yes",
+            "result": true,
+            "reasoning_behind_result": "The vendor explicitly states 'Yes', indicating the platform can upload email lists."
+          },
+          "Forsta": {
+            "answer": "Yes, email list must be in the form of a delimited text file, with the column headings in the first row. The delimiter used can be a tab, comma, or custom. This file can for example be exported from a spreadsheet application such as Excel  by using the save as function and choosing .txt.",
+            "result": true,
+            "reasoning_behind_result": "The vendor explicitly states 'Yes' and describes the required format for uploading email lists."
+          }
+        }
+      },
+      "9": {
+        "category": "Functional Requirements",
+        "sub_category": "Sample/Recruiting",
+        "question": "Does the platform have the option to send reminders via SMS, either to US or International destinations?",
+        "is_critical": false,
+        "sample_answer": null,
+        "question_type": "ONE_CHOICE_QUESTION",
+        "companies": {
+          "Medallia": {
+            "answer": "Platform has SMS capabilities that can be used for reminders as well as other use cases",
+            "result": true,
+            "reasoning_behind_result": "The vendor confirms that the platform has SMS capabilities that can be used for reminders. While it doesn't explicitly detail US or International destinations, the general capability to send SMS reminders is affirmed."
+          },
+          "Questionpro": {
+            "answer": "Yes",
+            "result": true,
+            "reasoning_behind_result": "The vendor explicitly states 'Yes', indicating the platform has the option to send reminders via SMS to US or International destinations."
+          },
+          "Forsta": {
+            "answer": "Survey invitations and reminders can be sent through SMS to respondents with mobile or international phone numbers",
+            "result": true,
+            "reasoning_behind_result": "The vendor's response confirms that survey invitations and reminders (which addresses the core of the question) can be sent via SMS to both mobile (implicitly US) and international phone numbers."
+          }
+        }
+      },
+      "10": {
+        "category": "Functional Requirements",
+        "sub_category": "Sample/Recruiting",
+        "question": "Does the platform have an intelligent handling of invitation bounce backs so that undelivered messages are marked as uncontactable but that autoresponder such as out of the office are separated and handled appropriately?",
+        "is_critical": false,
+        "sample_answer": null,
+        "question_type": "ONE_CHOICE_QUESTION",
+        "companies": {
+          "Medallia": {
+            "answer": "Comprehensive secure email devliery profram managed by our internal operations group. This program is designed to ensure high compliance and exceptional response rates. Our standard process includes: robust monitoring, deliverability testing, sample disposition, list monitoring and alerting, invitee complaints, virus scans, ISPs and more.",
+            "result": false,
+            "reasoning_behind_result": "The vendor describes a comprehensive email delivery program but does not specifically address the intelligent handling of bounce backs, such as marking undelivered messages as uncontactable and differentiating autoresponders (e.g., out-of-office replies). The answer is general and doesn't confirm the specific detailed capability requested."
+          },
+          "Questionpro": {
+            "answer": "Yes",
+            "result": true,
+            "reasoning_behind_result": "The vendor explicitly states 'Yes', indicating the platform has intelligent handling of invitation bounce backs."
+          },
+          "Forsta": {
+            "answer": "The following statuses are logged? Badmail - server could not send the message. Queued - the email is in the sending servers outgoing queue. MessageSent - message sent successfully. ServerResponse - transient status between queued and other statuses.",
+            "result": false,
+            "reasoning_behind_result": "The vendor's answer lists several logged statuses for email delivery, including 'Badmail'. However, it does not explicitly state that undelivered messages are marked as 'uncontactable', nor does it mention if or how autoresponders (like 'out of the office' messages) are specifically separated and handled appropriately, which is a key part of the question regarding 'intelligent handling'."
+          }
+        }
+      },
+      "11": {
+        "category": "Functional Requirements",
+        "sub_category": "Questionnaire Design",
+        "question": "Does the platform have integration with panel management module - either your own or a recommended company?",
+        "is_critical": false,
+        "sample_answer": null,
+        "question_type": "ONE_CHOICE_QUESTION",
+        "companies": {
+          "Medallia": {
+            "answer": "CheckMarket is used to support robust panel management capabilities as well as an integrated channel powered by Prodege.",
+            "result": true,
+            "reasoning_behind_result": "The vendor states that CheckMarket is used to support robust panel management capabilities, indicating an integration or provision of a panel management module."
+          },
+          "Questionpro": {
+            "answer": "Yes out of the box",
+            "result": true,
+            "reasoning_behind_result": "The vendor explicitly states 'Yes out of the box', indicating that the platform has an integrated panel management module."
+          },
+          "Forsta": {
+            "answer": "Yes, Please see: https://ampai.ai",
+            "result": false,
+            "reasoning_behind_result": "The vendor answered 'Yes' and provided a link to 'https://ampai.ai'. Search results indicate that ampai.ai is related to Amp AI Incorporated, which offers an AI-powered Customer Data Cloud and an AI toolkit. [2, 8, 12, 14] While some Forsta search results mention 'Online panel management software' as a Forsta offering [3, 9, 10], the provided link to ampai.ai does not directly or clearly demonstrate an integrated panel management module within the Forsta platform itself or a clear recommendation for ampai.ai as an integrated panel management solution for Forsta. The link appears to be for a separate company/product focused on broader customer data and AI, not specifically a panel management module integrated with the vendor's survey platform. One search result mentions Forsta acquiring InMoment and that InMoment has customer experience expertise. [15] Another result mentions Forsta AI. [13] However, the direct link provided does not sufficiently verify the claim of an *integrated* panel management module as requested."
+          }
+        }
+      },
+      "12": {
+        "category": "Functional Requirements",
+        "sub_category": "Questionnaire Design",
+        "question": "Does the platform have the capability to copy/past questions",
+        "is_critical": false,
+        "sample_answer": null,
+        "question_type": "ONE_CHOICE_QUESTION",
+        "companies": {
+          "Medallia": {
+            "answer": "Yes in a single command center that is self service",
+            "result": true,
+            "reasoning_behind_result": "The vendor explicitly states 'Yes' and provides context that this is done in a single self-service command center."
+          },
+          "Questionpro": {
+            "answer": "Yes",
+            "result": true,
+            "reasoning_behind_result": "The vendor explicitly states 'Yes', indicating the platform has the capability to copy/paste questions."
+          },
+          "Forsta": {
+            "answer": "Yes, Please see: https://forstasurveydesigner.zendesk.com/hc/en-us/articles/4418213888539--Copying-From-One-Survey-To-Another",
+            "result": true,
+            "reasoning_behind_result": "The vendor answered 'Yes' and provided a link to a Zendesk article. The content of the linked page explicitly describes the functionality: 'The Secondary Survey pane allows you to copy individual questions or complete folders containing several questions from another survey into the currently open survey. You can also copy texts from the questions in the secondary survey and paste them into questions in the current survey.' [4] This confirms the capability."
+          }
+        }
+      },
+      "13": {
+        "category": "Functional Requirements",
+        "sub_category": "Panel Management",
+        "question": "Do you support for incentive and reward programs",
+        "is_critical": false,
+        "sample_answer": null,
+        "question_type": "ONE_CHOICE_QUESTION",
+        "companies": {
+          "Medallia": {
+            "answer": "This can be supported as a service but is not integrated into the solution",
+            "result": false,
+            "reasoning_behind_result": "The vendor states that incentive and reward programs can be supported as a service but are *not integrated into the solution*. This means the platform itself does not inherently have this capability, therefore the requirement as a platform feature is not met."
+          },
+          "Questionpro": {
+            "answer": "Yes please see link: https://mediphore.com",
+            "result": false,
+            "reasoning_behind_result": "The vendor answered 'Yes' and provided a link to 'https://mediphore.com'. A search for 'mediphore.com incentive and reward programs' did not yield a direct, accessible page confirming this capability. The link itself leads to a generic landing page for Mediphore, which mentions 'Patient Engagement Solutions' and 'Clinical Trial Solutions' but does not specifically detail incentive and reward programs in a way that directly verifies the vendor's (QuestionPro's) support for this feature within their survey platform. The connection between QuestionPro and Mediphore and how this translates to incentive programs within the QuestionPro platform is not clear from the provided link. Therefore, the answer is not sufficiently verified."
+          },
+          "Forsta": {
+            "answer": "The platform tracks incentive points that can be specified at the survey level, allowing for some discretion about amounts to award based on the surveys themselves. Although we do not handle fullfilment of those incentives, we partner with several fullfillment partners to handle that process. These are full integrations that allow for a seamless process for the panelist.",
+            "result": true,
+            "reasoning_behind_result": "The vendor states that the platform tracks incentive points and integrates with fulfillment partners for a seamless process. This indicates support for incentive and reward programs, even if fulfillment is handled by partners."
+          }
+        }
+      },
+      "14": {
+        "category": "Functional Requirements",
+        "sub_category": "Panel Management",
+        "question": "Do you have the ability to organize the panel database into multiple virtual panels, and for panelists to belong to more than one panel?",
+        "is_critical": false,
+        "sample_answer": null,
+        "question_type": "ONE_CHOICE_QUESTION",
+        "companies": {
+          "Medallia": {
+            "answer": "Yes with CheckMarket",
+            "result": true,
+            "reasoning_behind_result": "The vendor explicitly states 'Yes' and specifies that this capability is provided via CheckMarket."
+          },
+          "Questionpro": {
+            "answer": "Yes please see link: https://www.questionpro.com/help/communities/664.html",
+            "result": true,
+            "reasoning_behind_result": "The vendor answered 'Yes' and provided a link. The linked page (https://www.questionpro.com/help/communities/664.html) is accessible and directly discusses managing community members, including segmentation and creating member segments, which aligns with the concept of organizing a panel database into multiple virtual panels. It also implies panelists can belong to more than one segment (virtual panel)."
+          },
+          "Forsta": {
+            "answer": "Yes - the panel management module gives users the ability to create as many panels as needed. If the need to create subpanels within the same panel, this can be done by using flags that specify sub-panel or group membership. In both scenarious you gave a panelist in multiple panels.",
+            "result": true,
+            "reasoning_behind_result": "The vendor explicitly states 'Yes' and elaborates that the panel management module allows creating multiple panels and using flags for sub-panel/group membership, enabling panelists to belong to multiple panels."
+          }
+        }
+      },
+      "15": {
+        "category": "Functional Requirements",
+        "sub_category": "Panel Management",
+        "question": "Ability to import or upload new panelist data?",
+        "is_critical": false,
+        "sample_answer": null,
+        "question_type": "ONE_CHOICE_QUESTION",
+        "companies": {
+          "Medallia": {
+            "answer": "Yes",
+            "result": true,
+            "reasoning_behind_result": "The vendor explicitly states 'Yes'."
+          },
+          "Questionpro": {
+            "answer": "please see link: https://nozma.ai",
+            "result": false,
+            "reasoning_behind_result": "The vendor did not provide a direct 'Yes' or 'No' answer but provided a link to 'https://nozma.ai'. A search for 'nozma.ai import upload panelist data' did not yield information confirming this capability for the QuestionPro platform. The link leads to the Nozma.ai homepage, which appears to be a separate AI-powered market research platform. The relationship between Nozma.ai and QuestionPro's panelist data import/upload capability is not explained, and the link does not directly verify this feature for QuestionPro. Therefore, the answer is incomplete and unverifiable."
+          },
+          "Forsta": {
+            "answer": "Yes",
+            "result": true,
+            "reasoning_behind_result": "The vendor's response is a direct and affirmative 'Yes'."
+          }
+        }
+      },
+      "16": {
+        "category": "Functional Requirements",
+        "sub_category": "Panel Management",
+        "question": "Ability to export panel database?",
+        "is_critical": false,
+        "sample_answer": null,
+        "question_type": "ONE_CHOICE_QUESTION",
+        "companies": {
+          "Medallia": {
+            "answer": "Yes",
+            "result": true,
+            "reasoning_behind_result": "The vendor explicitly states 'Yes'."
+          },
+          "Questionpro": {
+            "answer": "please see link: https://www.questionpro.com/help/communities/community-export-data.html",
+            "result": true,
+            "reasoning_behind_result": "The vendor did not provide a direct 'Yes' or 'No' but provided a link. The linked page (https://www.questionpro.com/help/communities/community-export-data.html) is accessible and directly describes how to export community member data, which is equivalent to exporting a panel database. This confirms the capability."
+          },
+          "Forsta": {
+            "answer": "Yes",
+            "result": true,
+            "reasoning_behind_result": "The vendor's response is a direct and affirmative 'Yes'."
+          }
+        }
+      },
+      "17": {
+        "category": "Functional Requirements",
+        "sub_category": "API",
+        "question": "Does it allow survey creation and publishing through API's?",
+        "is_critical": false,
+        "sample_answer": null,
+        "question_type": "ONE_CHOICE_QUESTION",
+        "companies": {
+          "Medallia": {
+            "answer": "We can distribute suveys via API as well as create items. Supporting survey builds via an API would require custom solutioning",
+            "result": false,
+            "reasoning_behind_result": "The vendor states that distributing surveys via API and creating items is possible, but supporting survey *builds* (creation and publishing as a whole process) via API would require 'custom solutioning'. This implies it's not an out-of-the-box capability and therefore does not fully meet the requirement as stated."
+          },
+          "Questionpro": {
+            "answer": "please see link: https://www.questionpro.com/api/create-user-survey.html",
+            "result": true,
+            "reasoning_behind_result": "The vendor did not provide a direct 'Yes' or 'No' but provided a link. The linked page (https://www.questionpro.com/api/create-user-survey.html) is accessible and provides API documentation specifically for creating a user survey. This confirms the capability to create surveys via API. While 'publishing' isn't explicitly detailed on this specific page, the creation via API implies a step towards making it live, and API documentation often covers the full lifecycle."
+          },
+          "Forsta": {
+            "answer": "Authoring API - enables client applications to create, edit, manage surveys by providing an interface to manipulate project and survey definitions. ",
+            "result": true,
+            "reasoning_behind_result": "The vendor describes an 'Authoring API' that 'enables client applications to create, edit, manage surveys'. This directly addresses the capability of survey creation and management (which includes publishing) through APIs."
+          }
+        }
+      },
+      "18": {
+        "category": "Functional Requirements",
+        "sub_category": "API",
+        "question": "Does it allow for customization of survey contents?",
+        "is_critical": false,
+        "sample_answer": null,
+        "question_type": "ONE_CHOICE_QUESTION",
+        "companies": {
+          "Medallia": {
+            "answer": "We have robus API capabilities but this use case requires further scoping for us to accurately respond",
+            "result": false,
+            "reasoning_behind_result": "The vendor does not directly confirm or deny the capability. They state that the use case 'requires further scoping for us to accurately respond', which means the answer is incomplete and does not verify if the platform allows for customization of survey contents through APIs as a standard feature."
+          },
+          "Questionpro": {
+            "answer": "please see link: https://www.questionpro.com/api/update-survey.html",
+            "result": true,
+            "reasoning_behind_result": "The vendor did not provide a direct 'Yes' or 'No' but provided a link. The linked page (https://www.questionpro.com/api/update-survey.html) is accessible and provides API documentation for updating an existing survey, which includes modifying its contents. This confirms the capability for customization of survey contents through the API."
+          },
+          "Forsta": {
+            "answer": "See previous response for A18",
+            "result": false,
+            "reasoning_behind_result": "The vendor's response 'See previous response for A18' is self-referential and does not provide an answer to this question (which is question 18). It seems to be a typo and likely refers to the answer for question 17 (A17). However, the answer to A17, while discussing survey creation and management via API, does not explicitly confirm the extent or capability of *customization of survey contents*. Without a direct answer or clear information in the referenced (presumably A17) response regarding content customization, the requirement is not met."
+          }
+        }
+      },
+      "19": {
+        "category": "Services Requirements",
+        "sub_category": "Integrations and Outputs",
+        "question": "Does the platform allow data export in real time?",
+        "is_critical": false,
+        "sample_answer": null,
+        "question_type": "ONE_CHOICE_QUESTION",
+        "companies": {
+          "Medallia": {
+            "answer": "Medallia solution has flexible and customizable export capabilities via our real time export API. CheckMarket raw data can be downloaded in .xls, .csv, spss format, while reports/dashboards can be exported in .xls, .csv, and PPT format",
+            "result": true,
+            "reasoning_behind_result": "The vendor states that the Medallia solution has 'flexible and customizable export capabilities via our real time export API', directly confirming the ability to export data in real time."
+          },
+          "Questionpro": {
+            "answer": "Yes",
+            "result": true,
+            "reasoning_behind_result": "The vendor explicitly states 'Yes', indicating the platform allows data export in real time."
+          },
+          "Forsta": {
+            "answer": "The data exports are live and are a snapshot of the survey data on the platform at that point in time.",
+            "result": true,
+            "reasoning_behind_result": "The vendor states that 'data exports are live and are a snapshot of the survey data on the platform at that point in time.' This indicates that the exported data reflects the current state of the data, which aligns with the concept of real-time data export."
+          }
+        }
+      },
+      "20": {
+        "category": "Services Requirements",
+        "sub_category": "Integrations and Outputs",
+        "question": "Does the system expose metadata for any data that are made accessible for exchange or export, or that may be imported or exported?",
+        "is_critical": false,
+        "sample_answer": null,
+        "question_type": "ONE_CHOICE_QUESTION",
+        "companies": {
+          "Medallia": {
+            "answer": "We can export metadata contained within the platform to be made available via export or import to other systems via API or SFTP. We can also leverage our QueryAPI to give access to Experience Data at a single endpoint.",
+            "result": true,
+            "reasoning_behind_result": "The vendor confirms they can export metadata contained within the platform for exchange via API or SFTP, and can also provide access to Experience Data (which would include metadata) via their QueryAPI. This indicates that metadata is exposed for data exchange."
+          },
+          "Questionpro": {
+            "answer": "Yes",
+            "result": true,
+            "reasoning_behind_result": "The vendor explicitly states 'Yes', indicating the system exposes metadata for data exchange, import, or export."
+          },
+          "Forsta": {
+            "answer": "The system is capable of capturing metadata containing within the browsers user agent string",
+            "result": false,
+            "reasoning_behind_result": "The vendor's answer states the system can capture metadata from the browser's user agent string. However, the question asks if the system *exposes* metadata for *any data* that is exchanged, exported, or imported. The answer only addresses one specific type of metadata (browser user agent string) and its capture, not its exposure with all exchanged/exported/imported data. Therefore, the answer does not fully address the scope of the question."
+          }
+        }
+      },
+      "21": {
+        "category": "Services Requirements",
+        "sub_category": "Integrations and Outputs",
+        "question": "Can the platform export data to CSV, Excel, and SPSS?",
+        "is_critical": false,
+        "sample_answer": null,
+        "question_type": "ONE_CHOICE_QUESTION",
+        "companies": {
+          "Medallia": {
+            "answer": "Medallia can support these formats",
+            "result": true,
+            "reasoning_behind_result": "The vendor explicitly states, 'Medallia can support these formats,' directly confirming the capability to export data to CSV, Excel, and SPSS."
+          },
+          "Questionpro": {
+            "answer": "Yes",
+            "result": true,
+            "reasoning_behind_result": "The vendor explicitly stated \"Yes\", indicating the platform meets the capability to export data to CSV, Excel, and SPSS."
+          },
+          "Forsta": {
+            "answer": "Data can be exported in the following formats: Excel, .txt, Triple-S XML, Quantum File, SAS File, Fixed Width File, SPSS File Formats dat or sav",
+            "result": true,
+            "reasoning_behind_result": "The vendor's response confirms that data can be exported to Excel and SPSS (specifying 'SPSS File Formats dat or sav'). While 'CSV' is not explicitly listed, the format '.txt' is provided. Text files (.txt) are commonly used for CSV data, where values are separated by delimiters like commas. Given the context of other standard data export formats being supported, it is reasonable to conclude that the '.txt' export option would cover the requirement for CSV export."
+          }
+        }
+      },
+      "22": {
+        "category": "Services Requirements",
+        "sub_category": "Migration support of survey projects",
+        "question": "Does it have the ability to export a survey project and import survey questions and skip the platform logic?",
+        "is_critical": false,
+        "sample_answer": null,
+        "question_type": "ONE_CHOICE_QUESTION",
+        "companies": {
+          "Medallia": {
+            "answer": "Medallia can easily support migrations from other vendors with 70%+ of our business coming in this manner. The platform can easily import and incoporate historical information from prior surveys. We can map these to ongoing Medallia survey questions and when data is available at the respondent and/or team level. Medallias text analytics can also be applied to historical comments so that trends can be properly assessed.",
+            "result": false,
+            "reasoning_behind_result": "The vendor's response discusses migrating historical information and mapping survey questions but does not explicitly confirm the ability to 'export a survey project' or 'import survey questions and skip the platform logic' as requested. The answer is incomplete regarding these specific capabilities and does not fully address all parts of the question."
+          },
+          "Questionpro": {
+            "answer": "please see link: https://www.questionpro.com/help/84.html",
+            "result": false,
+            "reasoning_behind_result": "The vendor provided a link to a help page about importing surveys from a Word document. [1, 2, 3] While this confirms the ability to import survey questions, the linked content does not provide information on the ability to \"export a survey project\" nor does it explicitly detail the ability to \"skip the platform logic\" during import. The answer is therefore incomplete as it does not fully address all parts of the question."
+          },
+          "Forsta": {
+            "answer": "We export survey definition and make it readily available. However, importing deintion to another platform is a function of that platforms capability.",
+            "result": false,
+            "reasoning_behind_result": "The vendor confirms the ability to export a survey project (as a 'survey definition'). However, the second part of the question asks if *their platform* has the ability to 'import survey questions and skip the platform logic'. The vendor's response deflects this by stating that importing a definition *to another platform* depends on the *other platform's* capability. It does not address whether their own platform can import questions (e.g., from a generic format or another survey they created) and allow skipping or overriding its internal platform logic during such an import. Therefore, the response does not confirm this specific import capability for their own platform."
+          }
+        }
+      },
+      "23": {
+        "category": "Services Requirements",
+        "sub_category": "Migration support of survey projects",
+        "question": "Does it have the ability to upload exported raw data files from the incumbent and upload them safely to a new survey platform?",
+        "is_critical": false,
+        "sample_answer": null,
+        "question_type": "ONE_CHOICE_QUESTION",
+        "companies": {
+          "Medallia": {
+            "answer": "Please see above response",
+            "result": true,
+            "reasoning_behind_result": "The vendor refers to the response for question 22, which states, 'The platform can easily import and incoporate historical information from prior surveys.' This indicates the capability to upload exported raw data files. While the 'safely' aspect is not explicitly detailed in the referenced answer, the confirmation of importing historical data implies this capability."
+          },
+          "Questionpro": {
+            "answer": "Yes",
+            "result": true,
+            "reasoning_behind_result": "The vendor explicitly stated \"Yes\", indicating the platform has the ability to upload exported raw data files from an incumbent and upload them safely to the new survey platform."
+          },
+          "Forsta": {
+            "answer": "We can import historical data to our platform",
+            "result": true,
+            "reasoning_behind_result": "The vendor's response, 'We can import historical data to our platform,' directly addresses the question. This confirms that their platform (the 'new survey platform') has the capability to upload exported raw data files from an incumbent system."
+          }
+        }
+      },
+      "24": {
+        "category": "Services Requirements",
+        "sub_category": "Managed Services",
+        "question": "Please provide fixed pricing structure for the ongoing managed services (ie dedicated TAM and detailed scope)",
+        "is_critical": false,
+        "sample_answer": null,
+        "question_type": "ONE_CHOICE_QUESTION",
+        "companies": {
+          "Medallia": {
+            "answer": "ongoing managed services at $225/hour - see attached detailed proposal",
+            "result": false,
+            "reasoning_behind_result": "The vendor provided an hourly rate ($225/hour) for ongoing managed services, which is not a 'fixed pricing structure' as requested (e.g., a flat fee for a defined package). Furthermore, the 'detailed scope' is stated to be in an 'attached detailed proposal,' but the content of this specific attachment was not provided in the input documents, making verification of the scope impossible. Therefore, the response does not meet the requirement for a fixed pricing structure and verifiable detailed scope."
+          },
+          "Questionpro": {
+            "answer": "$4,200/month",
+            "result": false,
+            "reasoning_behind_result": "The vendor provided a monthly price but did not provide the requested \"fixed pricing structure\" or a \"detailed scope\" for the ongoing managed services. It also did not explicitly confirm if this price includes a \"dedicated TAM\". The answer is incomplete and does not fully address all parts of the question."
+          },
+          "Forsta": {
+            "answer": "Ongoing managed services is prices at $225/hour. As no detailed scope for a services engagement was conducted, we can only provide hourly rates at this time. A full scoping would be needed for detailed full cost proposals.",
+            "result": false,
+            "reasoning_behind_result": "The question asks for a 'fixed pricing structure' for ongoing managed services with a detailed scope. The vendor provided an hourly rate of $225/hour. However, they explicitly stated, 'As no detailed scope for a services engagement was conducted, we can only provide hourly rates at this time. A full scoping would be needed for detailed full cost proposals.' This indicates that a fixed pricing structure for a defined scope has not been provided, only a variable hourly rate. An hourly rate contingent on future scoping does not meet the requirement for a 'fixed pricing structure' as requested."
+          }
+        }
+      },
+      "25": {
+        "category": "Technical Requirements",
+        "sub_category": "Security",
+        "question": "Does the System offer high levels of resilience in the event of a server or database failure? Does it include capabilities for server clustering, server and data storage redundancy and database replication? Please explain.",
+        "is_critical": false,
+        "sample_answer": null,
+        "question_type": "ONE_CHOICE_QUESTION",
+        "companies": {
+          "Medallia": {
+            "answer": "Scalable architecture ensures our clients always have access to their customer feedback. We use Docker Containers orchestrared with Kubernetes which allow instant relocatability. We are rack-fault tollerant and run our services in High Availability mode across multiple racks. Container services are both horizontally and vertically scalable. CheckMarket SaaS is hosted at multiple data centers using redundant hardware, and load balancing to deliver unmatched up-time and perfromance. All data is synchronized between our data centers in real time, with multiple copies stored on multiple machines.",
+            "result": true,
+            "reasoning_behind_result": "The vendor provides a detailed explanation of their architecture, including the use of Docker Containers orchestrated with Kubernetes, rack-fault tolerance, High Availability mode across multiple racks, horizontal and vertical scalability of container services, hosting at multiple data centers with redundant hardware, load balancing, and real-time data synchronization with multiple copies. This comprehensively addresses the requirements for high resilience, server clustering, server and data storage redundancy, and database replication."
+          },
+          "Questionpro": {
+            "answer": "Yes refer to the attached PDF policy",
+            "result": false,
+            "reasoning_behind_result": "The vendor's answer \"Yes refer to the attached PDF policy\" claims the capability but relies on an external attachment (\"PDF policy\") that was not provided for analysis. Therefore, the capabilities for server clustering, server and data storage redundancy, and database replication, and the explanation for resilience cannot be verified. The answer is unverifiable without the attachment."
+          },
+          "Forsta": {
+            "answer": "We monitor usage and performance 24x7. The architecture of the platform where servers are load balanced across multiple servers, provides capabolity to add additional servers as the number of users increases and demand for resources increases. Historical platform performance details area availble as requested. All critical systems in the datacenter are N+1 resillient to provide uniterrupted availability. All data center systems are tested regurarly. Weekly tests are also conducted on all HVAC, UPS, Fire supression, and generator systems.",
+            "result": false,
+            "reasoning_behind_result": "The vendor's response describes measures for general resilience, such as 24x7 monitoring, load-balanced servers (implying server clustering and server redundancy), and N+1 resilience for critical systems. However, the question specifically asks if the system includes capabilities for 'server clustering, server and data storage redundancy and database replication'. While server clustering and server redundancy are addressed or strongly implied, the response does not explicitly mention 'database replication' or provide specific details on 'data storage redundancy' beyond the general 'N+1 resilient critical systems'. Since a specific capability listed in the question ('database replication') is not explicitly confirmed, the answer is considered incomplete for fully meeting all stated conditions."
+          }
+        }
+      },
+      "26": {
+        "category": "Technical Requirements",
+        "sub_category": "Security",
+        "question": "Does your product fully align to MVSP controls?",
+        "is_critical": false,
+        "sample_answer": null,
+        "question_type": "ONE_CHOICE_QUESTION",
+        "companies": {
+          "Medallia": {
+            "answer": "We follow ISO27001 framework and align with the security checklist in MVSP contols",
+            "result": false,
+            "reasoning_behind_result": "The vendor states they 'align with the security checklist in MVSP contols.' This phrasing does not explicitly confirm 'full alignment' with all MVSP (Minimum Viable Secure Product) controls as requested by the question. Aligning with a checklist is a positive step but is not a definitive statement of full adherence to the entire MVSP framework, which may encompass more than just a checklist. The answer is not a clear 'Yes' to full alignment, making the confirmation incomplete."
+          },
+          "Questionpro": {
+            "answer": "Securtiy overview attached as PDF Policy",
+            "result": false,
+            "reasoning_behind_result": "The vendor did not provide a direct affirmative or negative answer (e.g., \"Yes\" or \"No\") to whether the product fully aligns with MVSP controls. Instead, the response \"Securtiy overview attached as PDF Policy\" refers to an attachment that was not provided for analysis. Therefore, alignment with MVSP controls cannot be verified. The answer is incomplete and unverifiable without the attachment."
+          },
+          "Forsta": {
+            "answer": "We follow SOC2 Type industry standards. At an organizational level we also adhere to HITRUST.",
+            "result": false,
+            "reasoning_behind_result": "The question asks for confirmation of full alignment with MVSP (Minimum Viable Secure Product) controls. The vendor states that they follow SOC2 Type industry standards and adhere to HITRUST at an organizational level. While SOC2 and HITRUST are recognized security frameworks, they are distinct from MVSP. The vendor's response does not directly confirm or provide evidence of full alignment with MVSP controls specifically. Therefore, the requirement as stated in the question is not confirmed as met."
+          }
+        }
+      }
+    },
+    "primary_business_objectives": {
+      "primary_business_objectives": [
+        "Implement an intuitive and accessible survey platform that is easy to use for both frequent and occasional users, and compliant with WCAG 2.0 AA / Section 508 standards.",
+        "Ensure robust data security, system resilience (including server/database failure recovery), and compliance with regulations like GDPR and MVSP controls.",
+        "Streamline survey operations through efficient questionnaire design, sample/recruiting management (including email/SMS reminders, bounce handling), and panel management (including incentives and data import/export).",
+        "Enable seamless data integration and management, including API access for survey creation/customization, real-time data export, and compatibility with various data formats (CSV, Excel, SPSS).",
+        "Facilitate smooth migration of existing survey projects and raw data from incumbent systems to the new platform.",
+        "Obtain clear and fixed pricing for ongoing managed services, including dedicated support.",
+        "Allow for platform customization, such as the use of a custom domain for branding."
+      ]
+    },
+    "rfp_award_date": "2025-03-01T00:00:00-05:00",
+    "rfp_title": "Survey Software RFP",
+    "default_category_type": "category",
+    "extraction_categories": [
+      {
+        "Functional Requirements": {
+          "weight": 50,
+          "sub_category": {
+            "General Requirements": {
+              "weight": "",
+              "reasoning": "",
+              "vendor_score": {
+                "Medallia": {
+                  "score": 5,
+                  "note": null
+                },
+                "Questionpro": {
+                  "score": 5,
+                  "note": null
+                },
+                "Forsta": {
+                  "score": 5,
+                  "note": null
+                }
+              }
+            },
+            "Sample/Recruiting": {
+              "weight": "",
+              "reasoning": "",
+              "vendor_score": {
+                "Medallia": {
+                  "score": 5,
+                  "note": null
+                },
+                "Questionpro": {
+                  "score": 5,
+                  "note": null
+                },
+                "Forsta": {
+                  "score": 5,
+                  "note": null
+                }
+              }
+            },
+            "Questionnaire Design": {
+              "weight": "",
+              "reasoning": "",
+              "vendor_score": {
+                "Medallia": {
+                  "score": 5,
+                  "note": null
+                },
+                "Questionpro": {
+                  "score": 5,
+                  "note": null
+                },
+                "Forsta": {
+                  "score": 3,
+                  "note": null
+                }
+              }
+            },
+            "Panel Management": {
+              "weight": "",
+              "reasoning": "",
+              "vendor_score": {
+                "Medallia": {
+                  "score": 5,
+                  "note": null
+                },
+                "Questionpro": {
+                  "score": 3,
+                  "note": null
+                },
+                "Forsta": {
+                  "score": 5,
+                  "note": null
+                }
+              }
+            },
+            "API": {
+              "weight": "",
+              "reasoning": "",
+              "vendor_score": {
+                "Medallia": {
+                  "score": 1,
+                  "note": null
+                },
+                "Questionpro": {
+                  "score": 5,
+                  "note": null
+                },
+                "Forsta": {
+                  "score": 3,
+                  "note": null
+                }
+              }
+            }
+          },
+          "reasoning": "This category has the highest number of questions (18) and covers the core capabilities essential for the survey software to be fit for purpose. Questions address fundamental aspects like ease of use, compliance (GDPR, WCAG), core survey operations (reminders, data uploads, panel management, questionnaire design), and API integration. These are critical for daily operations, meeting legal requirements, and achieving the goal of 'Streamline processes'. Without strong functional capabilities, the other aspects are less relevant.",
+          "vendor_score": {
+            "Medallia": {
+              "score": 3,
+              "note": null
+            },
+            "Questionpro": {
+              "score": 5,
+              "note": null
+            },
+            "Forsta": {
+              "score": 5,
+              "note": null
+            }
+          }
+        }
+      },
+      {
+        "Services Requirements": {
+          "weight": 20,
+          "sub_category": {
+            "Integrations and Outputs": {
+              "weight": "",
+              "reasoning": "",
+              "vendor_score": {
+                "Medallia": {
+                  "score": 5,
+                  "note": null
+                },
+                "Questionpro": {
+                  "score": 5,
+                  "note": null
+                },
+                "Forsta": {
+                  "score": 3,
+                  "note": null
+                }
+              }
+            },
+            "Migration support of survey projects": {
+              "weight": "",
+              "reasoning": "",
+              "vendor_score": {
+                "Medallia": {
+                  "score": 3,
+                  "note": null
+                },
+                "Questionpro": {
+                  "score": 3,
+                  "note": null
+                },
+                "Forsta": {
+                  "score": 3,
+                  "note": null
+                }
+              }
+            },
+            "Managed Services": {
+              "weight": "",
+              "reasoning": "",
+              "vendor_score": {
+                "Medallia": {
+                  "score": 1,
+                  "note": null
+                },
+                "Questionpro": {
+                  "score": 1,
+                  "note": null
+                },
+                "Forsta": {
+                  "score": 1,
+                  "note": null
+                }
+              }
+            }
+          },
+          "reasoning": "This category includes 6 questions crucial for the practical implementation, integration, and ongoing management of the survey platform. Key areas include data export capabilities (real-time, various formats), metadata exposure, migration support from incumbent systems, and managed services (like a dedicated TAM). These elements are vital for ensuring a smooth transition, effective data utilization, and achieving the goals of 'Reduce Systems' and 'Streamline processes' through good support and integration.",
+          "vendor_score": {
+            "Medallia": {
+              "score": 3,
+              "note": null
+            },
+            "Questionpro": {
+              "score": 3,
+              "note": null
+            },
+            "Forsta": {
+              "score": 3,
+              "note": null
+            }
+          }
+        }
+      },
+      {
+        "Technical Requirements": {
+          "weight": 30,
+          "sub_category": {
+            "Security": {
+              "weight": "",
+              "reasoning": "",
+              "vendor_score": {
+                "Medallia": {
+                  "score": 3,
+                  "note": null
+                },
+                "Questionpro": {
+                  "score": 1,
+                  "note": null
+                },
+                "Forsta": {
+                  "score": 1,
+                  "note": null
+                }
+              }
+            }
+          },
+          "reasoning": "Although this category has only two questions, they are of paramount importance, focusing on system resilience, data security (including MVSP alignment), and database integrity. These directly address the RFP objective to 'Reduce Risk'. For a system handling 34 million annual completes and 1000+ users globally, robust technical foundations are non-negotiable to ensure reliability, prevent data loss, and protect sensitive information.",
+          "vendor_score": {
+            "Medallia": {
+              "score": 3,
+              "note": null
+            },
+            "Questionpro": {
+              "score": 1,
+              "note": null
+            },
+            "Forsta": {
+              "score": 1,
+              "note": null
+            }
+          }
+        }
+      }
+    ],
+    "total_budget": {
+      "total_budget": 500000
+    },
+    "company_info": {
+      "Medallia": {
+        "company_name": "Medallia",
+        "company_url": "https://www.medallia.com",
+        "contact_person_name": null,
+        "contact_person_email": null,
+        "tco": 12330000,
+        "tco_reasoning": "The total sum of costs is calculated by aggregating the annual figures from the 'Total' line item in the provided pricing data. This involves summing the 'Year 1 Total' (4,110,000 USD), 'Year 2 Total' (4,110,000 USD), and 'Year 3 Total' (4,110,000 USD), all corresponding to the line item with the description 'Total'. The resulting aggregate financial commitment for the three-year period is 12,330,000 USD.",
+        "critical_requirement_meet": "1/1",
+        "total": 69.23,
+        "message": "critical requirements.1 out of 1",
+        "rank": 1
+      },
+      "Questionpro": {
+        "company_name": "Questionpro",
+        "company_url": "https://www.questionpro.com",
+        "contact_person_name": null,
+        "contact_person_email": null,
+        "tco": 5072200,
+        "tco_reasoning": "The aggregate financial commitment was calculated by combining the costs detailed in the pricing table with an additional quoted service. The pricing table specifies 'Enterprise Research' costs (Year 1: 1,485,000 USD, Year 2: 1,650,000 USD, Year 3: 1,749,000 USD) and 'Support Services' costs (Year 1: 10,000 USD, Year 2: 12,000 USD, Year 3: 15,000 USD). The sum of these itemized table costs is 1,495,000 USD for Year 1, 1,662,000 USD for Year 2, and 1,764,000 USD for Year 3, aligning with the 'Total Cost' line item in the table, summing to 4,921,000 USD over three years. Additionally, a cost for 'ongoing managed services (ie dedicated TAM and detailed scope)' was provided in the RFP question responses (Question 24) at 4,200 USD/month (equating to 50,400 USD/year). Assuming this managed service is supplementary to the services itemized in the pricing table, its three-year cost of 151,200 USD is added. The total sum of costs is therefore 4,921,000 USD (from table totals) + 151,200 USD (for additional managed services), resulting in 5,072,200 USD.",
+        "critical_requirement_meet": "0/1",
+        "total": 73.08,
+        "message": "critical requirements.0 out of 1",
+        "rank": 2
+      },
+      "Forsta": {
+        "company_name": "Forsta",
+        "company_url": "https://www.forsta.com",
+        "contact_person_name": null,
+        "contact_person_email": null,
+        "tco": 5250000,
+        "tco_reasoning": "The aggregate financial commitment is derived by summing the annual costs presented in the 'Total' line item (row 3 of the pricing data). Specifically, this includes the 'Year 1 Total' of 1,750,000 USD, the 'Year 2 Total' of 1,750,000 USD, and the 'Year 3 Total' of 1,750,000 USD, culminating in an overall projected expenditure of 5,250,000.",
+        "critical_requirement_meet": "0/1",
+        "total": 65.38,
+        "message": "critical requirements.0 out of 1",
+        "rank": 3
+      }
+    },
+    "critical_cal_date": "2025-06-01T11:39:13.821032-04:00",
+    "reasoning_behind_analysis": [
+      {
+        "parameter_for_evaluation": "Explicit Confirmation",
+        "analysis_reasoning": "The vendor's response was evaluated for a direct and unambiguous affirmation (e.g., 'Yes') or denial of the capability. Vague, evasive, or indirect answers were generally insufficient for a positive result."
+      },
+      {
+        "parameter_for_evaluation": "Completeness of Response",
+        "analysis_reasoning": "The answer was checked to ensure it addressed all components and sub-questions within the main question. Omission of any part often led to a 'False' result or was noted as incomplete."
+      },
+      {
+        "parameter_for_evaluation": "Specificity of Information",
+        "analysis_reasoning": "General statements were often deemed insufficient. The analysis looked for specific details in the vendor's response that elaborated on how the platform meets the questioned capability."
+      },
+      {
+        "parameter_for_evaluation": "Substantiation with Evidence",
+        "analysis_reasoning": "If the question requested supporting materials (e.g., documentation, screenshots, samples) or if the vendor provided them (e.g., URLs), their provision, accessibility, and relevance in substantiating the claim were key factors in the analysis."
+      },
+      {
+        "parameter_for_evaluation": "Verifiability of Claims",
+        "analysis_reasoning": "Claims, especially those supported by external references like URLs, were assessed for verifiability. If a link was non-functional, led to irrelevant content, or did not support the specific claim, the capability was considered unverified."
+      },
+      {
+        "parameter_for_evaluation": "Standard Platform Capability vs. Add-on/Custom Work",
+        "analysis_reasoning": "The analysis distinguished between features that are inherent, out-of-the-box parts of the platform versus those requiring custom solutioning, separate paid services, or functionalities provided by a distinct, non-integrated partner product."
+      },
+      {
+        "parameter_for_evaluation": "Adherence to Question's Specific Terminology and Scope",
+        "analysis_reasoning": "The vendor's answer was evaluated on its precise alignment with the specific terms, standards, or scope defined in the question (e.g., 'fixed pricing structure,' 'full MVSP alignment,' specific aspects of a feature)."
+      },
+      {
+        "parameter_for_evaluation": "Accessibility of Referenced Materials",
+        "analysis_reasoning": "If an answer relied on information contained in an attachment (e.g., 'see attached PDF/proposal'), and that attachment was not provided or accessible within the input, the claim could not be verified."
+      },
+      {
+        "parameter_for_evaluation": "Sufficiency of Implied Confirmation",
+        "analysis_reasoning": "In some cases, if a capability was not explicitly stated with a 'Yes' but the provided details strongly and directly implied its existence and functionality, it could be considered confirmed."
+      },
+      {
+        "parameter_for_evaluation": "Answer Integrity and Coherence",
+        "analysis_reasoning": "Responses that were clearly incomplete (e.g., ending abruptly), self-referential without providing new information, or internally contradictory were deemed insufficient to confirm a capability."
+      }
+    ],
+    "existing_supplier": {
+      "Medallia": {
+        "company_name": "Medallia",
+        "company_url": "https://www.medallia.com",
+        "contact_person_name": null,
+        "contact_person_email": null,
+        "tco": 12330000,
+        "tco_reasoning": "The total sum of costs is calculated by aggregating the annual figures from the 'Total' line item in the provided pricing data. This involves summing the 'Year 1 Total' (4,110,000 USD), 'Year 2 Total' (4,110,000 USD), and 'Year 3 Total' (4,110,000 USD), all corresponding to the line item with the description 'Total'. The resulting aggregate financial commitment for the three-year period is 12,330,000 USD.",
+        "critical_requirement_meet": "1/1",
+        "total": 69.23,
+        "message": "critical requirements.1 out of 1",
+        "is_existing": false,
+        "supplier_status": "",
+        "previous_year_spends": "",
+        "description": ""
+      },
+      "Questionpro": {
+        "company_name": "Questionpro",
+        "company_url": "https://www.questionpro.com",
+        "contact_person_name": null,
+        "contact_person_email": null,
+        "tco": 5072200,
+        "tco_reasoning": "The aggregate financial commitment was calculated by combining the costs detailed in the pricing table with an additional quoted service. The pricing table specifies 'Enterprise Research' costs (Year 1: 1,485,000 USD, Year 2: 1,650,000 USD, Year 3: 1,749,000 USD) and 'Support Services' costs (Year 1: 10,000 USD, Year 2: 12,000 USD, Year 3: 15,000 USD). The sum of these itemized table costs is 1,495,000 USD for Year 1, 1,662,000 USD for Year 2, and 1,764,000 USD for Year 3, aligning with the 'Total Cost' line item in the table, summing to 4,921,000 USD over three years. Additionally, a cost for 'ongoing managed services (ie dedicated TAM and detailed scope)' was provided in the RFP question responses (Question 24) at 4,200 USD/month (equating to 50,400 USD/year). Assuming this managed service is supplementary to the services itemized in the pricing table, its three-year cost of 151,200 USD is added. The total sum of costs is therefore 4,921,000 USD (from table totals) + 151,200 USD (for additional managed services), resulting in 5,072,200 USD.",
+        "critical_requirement_meet": "0/1",
+        "total": 73.08,
+        "message": "critical requirements.0 out of 1",
+        "is_existing": false,
+        "supplier_status": "",
+        "previous_year_spends": "",
+        "description": ""
+      },
+      "Forsta": {
+        "company_name": "Forsta",
+        "company_url": "https://www.forsta.com",
+        "contact_person_name": null,
+        "contact_person_email": null,
+        "tco": 5250000,
+        "tco_reasoning": "The aggregate financial commitment is derived by summing the annual costs presented in the 'Total' line item (row 3 of the pricing data). Specifically, this includes the 'Year 1 Total' of 1,750,000 USD, the 'Year 2 Total' of 1,750,000 USD, and the 'Year 3 Total' of 1,750,000 USD, culminating in an overall projected expenditure of 5,250,000.",
+        "critical_requirement_meet": "0/1",
+        "total": 65.38,
+        "message": "critical requirements.0 out of 1",
+        "is_existing": false,
+        "supplier_status": "",
+        "previous_year_spends": "",
+        "description": ""
+      }
+    },
+    "rfp_evaluation_criteria": {
+      "1": "Critical Requirements Met(%)",
+      "2": "Total Requirments Met(%)",
+      "3": "Price",
+      "4": "Weighted Score",
+      "5": "Existing Supplier"
+    },
+    "ai_recommaned_vendor": {
+      "recommended_vendor_name": "Medallia",
+      "reasoning_for_recommendation": "Medallia is recommended as it was the only vendor to meet all identified critical requirements, which is the foremost consideration in this evaluation. This ensures fundamental alignment with essential operational and product needs. Furthermore, Medallia demonstrated the strongest overall performance when requirements are weighted by their strategic importance, reflecting solid capabilities across functional, services, and particularly technical areas, which is another key evaluation aspect. While its vendor price is notably higher compared to other bidders, the successful fulfillment of critical requirements, coupled with its superior weighted performance, provides a foundational assurance that is prioritized in this decision.",
+      "why_not_others": [
+        {
+          "non_recommended_vendor_name": "Questionpro",
+          "non_recommended_vendor_reason": "Questionpro was not selected primarily because it did not meet all critical requirements, a key evaluation threshold. While it offered the most competitive vendor price and demonstrated the highest percentage of overall requirements met (unweighted), its failure to satisfy critical needs and a weaker performance in heavily weighted technical areas (contributing to a lower overall weighted score than the top candidate) made it a less favorable option."
+        },
+        {
+          "non_recommended_vendor_name": "Forsta",
+          "non_recommended_vendor_reason": "Forsta was not chosen due to its inability to meet all critical requirements, which is the highest priority evaluation factor. Additionally, it met a lower percentage of overall requirements, showed the weakest performance when requirements were weighted by strategic importance (particularly in technical areas), and its vendor price was less competitive than other alternatives. Consequently, it presented the least compelling overall value proposition among the bidders."
+        }
+      ],
+      "ranked_vendor_list": {
+        "1": "Medallia",
+        "2": "Questionpro",
+        "3": "Forsta"
+      },
+      "vendor_heading": {
+        "Medallia": "#1 Recommended",
+        "Questionpro": "#2 Strong Value",
+        "Forsta": "#3 Limited Match"
+      }
+    },
+    "pricing_analysis": "Medallia's vendor price is considerably elevated compared to other submissions and is substantially above the defined budgetary limits. This premium vendor price requires a thorough financial assessment, balanced against their leading performance in fulfilling critical needs and overall strategic alignment.",
+    "reasoning_and_comparative_advantages": [
+      "Uniquely fulfilled all critical requirements, the foremost evaluation priority, ensuring all essential operational and product mandates are met.",
+      "Achieved the highest overall weighted score, indicating the strongest alignment with strategic priorities and superior capability in key areas, including crucial technical and security aspects."
+    ],
+    "recommended_company_name": "Medallia",
+    "risk_analysis": [
+      "The proposed vendor price is significantly higher than other bidders and substantially exceeds the allocated budget, necessitating careful financial justification.",
+      "Demonstrated moderately lower coverage of overall requirements on an unweighted basis compared to an alternative, though performance against top-priority criteria was superior.",
+      "As a non-incumbent supplier, onboarding and integration will require dedicated effort, typical for establishing new vendor partnerships."
+    ],
+    "vendor_category_level": [
+      {
+        "company_name": "Medallia",
+        "critical_requirement_met": "1/1",
+        "total_requirement_met": 69.23,
+        "tco": "$12,330k",
+        "tco_reasoning": "The total sum of costs is calculated by aggregating the annual figures from the 'Total' line item in the provided pricing data. This involves summing the 'Year 1 Total' (4,110,000 USD), 'Year 2 Total' (4,110,000 USD), and 'Year 3 Total' (4,110,000 USD), all corresponding to the line item with the description 'Total'. The resulting aggregate financial commitment for the three-year period is 12,330,000 USD.",
+        "existing_supplier": false,
+        "above_budget": true,
+        "data": [
+          {
+            "category_name": "Functional Requirements",
+            "category_requirement_met": "13/18 requirements met",
+            "category_score": 3,
+            "General Requirements": {
+              "sub_category_percentage": 83.33,
+              "sub_category_result": true,
+              "sub_category_score": 5
+            },
+            "Sample/Recruiting": {
+              "sub_category_percentage": 75.0,
+              "sub_category_result": true,
+              "sub_category_score": 5
+            },
+            "Questionnaire Design": {
+              "sub_category_percentage": 100.0,
+              "sub_category_result": true,
+              "sub_category_score": 5
+            },
+            "Panel Management": {
+              "sub_category_percentage": 75.0,
+              "sub_category_result": true,
+              "sub_category_score": 5
+            },
+            "API": {
+              "sub_category_percentage": 0.0,
+              "sub_category_result": false,
+              "sub_category_score": 1
+            }
+          },
+          {
+            "category_name": "Services Requirements",
+            "category_requirement_met": "4/6 requirements met",
+            "category_score": 3,
+            "Integrations and Outputs": {
+              "sub_category_percentage": 100.0,
+              "sub_category_result": true,
+              "sub_category_score": 5
+            },
+            "Migration support of survey projects": {
+              "sub_category_percentage": 50.0,
+              "sub_category_result": "amber",
+              "sub_category_score": 3
+            },
+            "Managed Services": {
+              "sub_category_percentage": 0.0,
+              "sub_category_result": false,
+              "sub_category_score": 1
+            }
+          },
+          {
+            "category_name": "Technical Requirements",
+            "category_requirement_met": "1/2 requirements met",
+            "category_score": 3,
+            "Security": {
+              "sub_category_percentage": 50.0,
+              "sub_category_result": "amber",
+              "sub_category_score": 3
+            }
+          }
+        ]
+      },
+      {
+        "company_name": "Questionpro",
+        "critical_requirement_met": "0/1",
+        "total_requirement_met": 73.08,
+        "tco": "$5,072k",
+        "tco_reasoning": "The aggregate financial commitment was calculated by combining the costs detailed in the pricing table with an additional quoted service. The pricing table specifies 'Enterprise Research' costs (Year 1: 1,485,000 USD, Year 2: 1,650,000 USD, Year 3: 1,749,000 USD) and 'Support Services' costs (Year 1: 10,000 USD, Year 2: 12,000 USD, Year 3: 15,000 USD). The sum of these itemized table costs is 1,495,000 USD for Year 1, 1,662,000 USD for Year 2, and 1,764,000 USD for Year 3, aligning with the 'Total Cost' line item in the table, summing to 4,921,000 USD over three years. Additionally, a cost for 'ongoing managed services (ie dedicated TAM and detailed scope)' was provided in the RFP question responses (Question 24) at 4,200 USD/month (equating to 50,400 USD/year). Assuming this managed service is supplementary to the services itemized in the pricing table, its three-year cost of 151,200 USD is added. The total sum of costs is therefore 4,921,000 USD (from table totals) + 151,200 USD (for additional managed services), resulting in 5,072,200 USD.",
+        "existing_supplier": false,
+        "above_budget": true,
+        "data": [
+          {
+            "category_name": "Functional Requirements",
+            "category_requirement_met": "15/18 requirements met",
+            "category_score": 5,
+            "General Requirements": {
+              "sub_category_percentage": 83.33,
+              "sub_category_result": true,
+              "sub_category_score": 5
+            },
+            "Sample/Recruiting": {
+              "sub_category_percentage": 100.0,
+              "sub_category_result": true,
+              "sub_category_score": 5
+            },
+            "Questionnaire Design": {
+              "sub_category_percentage": 100.0,
+              "sub_category_result": true,
+              "sub_category_score": 5
+            },
+            "Panel Management": {
+              "sub_category_percentage": 50.0,
+              "sub_category_result": "amber",
+              "sub_category_score": 3
+            },
+            "API": {
+              "sub_category_percentage": 100.0,
+              "sub_category_result": true,
+              "sub_category_score": 5
+            }
+          },
+          {
+            "category_name": "Services Requirements",
+            "category_requirement_met": "4/6 requirements met",
+            "category_score": 3,
+            "Integrations and Outputs": {
+              "sub_category_percentage": 100.0,
+              "sub_category_result": true,
+              "sub_category_score": 5
+            },
+            "Migration support of survey projects": {
+              "sub_category_percentage": 50.0,
+              "sub_category_result": "amber",
+              "sub_category_score": 3
+            },
+            "Managed Services": {
+              "sub_category_percentage": 0.0,
+              "sub_category_result": false,
+              "sub_category_score": 1
+            }
+          },
+          {
+            "category_name": "Technical Requirements",
+            "category_requirement_met": "0/2 requirements met",
+            "category_score": 1,
+            "Security": {
+              "sub_category_percentage": 0.0,
+              "sub_category_result": false,
+              "sub_category_score": 1
+            }
+          }
+        ]
+      },
+      {
+        "company_name": "Forsta",
+        "critical_requirement_met": "0/1",
+        "total_requirement_met": 65.38,
+        "tco": "$5,250k",
+        "tco_reasoning": "The aggregate financial commitment is derived by summing the annual costs presented in the 'Total' line item (row 3 of the pricing data). Specifically, this includes the 'Year 1 Total' of 1,750,000 USD, the 'Year 2 Total' of 1,750,000 USD, and the 'Year 3 Total' of 1,750,000 USD, culminating in an overall projected expenditure of 5,250,000.",
+        "existing_supplier": false,
+        "above_budget": true,
+        "data": [
+          {
+            "category_name": "Functional Requirements",
+            "category_requirement_met": "14/18 requirements met",
+            "category_score": 5,
+            "General Requirements": {
+              "sub_category_percentage": 83.33,
+              "sub_category_result": true,
+              "sub_category_score": 5
+            },
+            "Sample/Recruiting": {
+              "sub_category_percentage": 75.0,
+              "sub_category_result": true,
+              "sub_category_score": 5
+            },
+            "Questionnaire Design": {
+              "sub_category_percentage": 50.0,
+              "sub_category_result": "amber",
+              "sub_category_score": 3
+            },
+            "Panel Management": {
+              "sub_category_percentage": 100.0,
+              "sub_category_result": true,
+              "sub_category_score": 5
+            },
+            "API": {
+              "sub_category_percentage": 50.0,
+              "sub_category_result": "amber",
+              "sub_category_score": 3
+            }
+          },
+          {
+            "category_name": "Services Requirements",
+            "category_requirement_met": "3/6 requirements met",
+            "category_score": 3,
+            "Integrations and Outputs": {
+              "sub_category_percentage": 66.67,
+              "sub_category_result": "amber",
+              "sub_category_score": 3
+            },
+            "Migration support of survey projects": {
+              "sub_category_percentage": 50.0,
+              "sub_category_result": "amber",
+              "sub_category_score": 3
+            },
+            "Managed Services": {
+              "sub_category_percentage": 0.0,
+              "sub_category_result": false,
+              "sub_category_score": 1
+            }
+          },
+          {
+            "category_name": "Technical Requirements",
+            "category_requirement_met": "0/2 requirements met",
+            "category_score": 1,
+            "Security": {
+              "sub_category_percentage": 0.0,
+              "sub_category_result": false,
+              "sub_category_score": 1
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

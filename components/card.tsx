@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import {ChevronDown, ChevronRight} from 'lucide-react';
 
 const styles = {
-    primitive: {
+    data: {
         null: "text-gray-500",
         boolean: "text-blue-600",
         number: "text-blue-600",
@@ -14,7 +14,7 @@ const styles = {
     layout: {
         expandableHeader: "cursor-pointer flex items-center py-0.5 select-none hover:bg-gray-50 rounded px-1 transition-colors duration-150",
         expandedContent: "border-l border-gray-200 ml-2 pl-3",   
-        primitiveRow: "py-0.5 flex items-center",
+        dataRow: "py-0.5 flex items-center",
         card: "font-sans text-sm leading-relaxed text-gray-900 bg-white p-5 rounded-md border border-gray-200 shadow-sm max-w-full overflow-auto",
         title: "text-2xl font-semibold mt-0 mb-5"
     },
@@ -47,15 +47,15 @@ const JsonRenderer = ({ data, name }: JsonProps) => {
     }
 
     const renderData = (value: any) => {
-        if (value === null) return <span className={styles.primitive.null}>null</span>;
-        if (value === undefined) return <span className={styles.primitive.null}>undefined</span>;
-        if (typeof value === 'boolean') return <span className={styles.primitive.boolean}>{value.toString()}</span>;
-        if (typeof value === 'number') return <span className={styles.primitive.number}>{value}</span>;
+        if (value === null) return <span className={styles.data.null}>null</span>;
+        if (value === undefined) return <span className={styles.data.null}>undefined</span>;
+        if (typeof value === 'boolean') return <span className={styles.data.boolean}>{value.toString()}</span>;
+        if (typeof value === 'number') return <span className={styles.data.number}>{value}</span>;
         if (typeof value === 'string') {
             const displayValue = value.length > 100 ? value.substring(0, 100) + '...' : value;
-            return <span className={styles.primitive.string}>"{displayValue}"</span>;
+            return <span className={styles.data.string}>"{displayValue}"</span>;
         }
-        return <span className={styles.primitive.default}>{String(value)}</span>;
+        return <span className={styles.data.default}>{String(value)}</span>;
     };
 
     if (Array.isArray(data)) {
@@ -65,7 +65,6 @@ const JsonRenderer = ({ data, name }: JsonProps) => {
                     {isExpanded ? <ChevronDown size={14} /> : <ChevronRight size={14} />}
                     {name && <span className={`${styles.text.key} ${styles.text.spacing.afterIcon}`}>{name}:</span>}
                     <span className={`${styles.text.type} ${styles.text.spacing.afterKey}`}>
-                        {/* Array[{data.length}] */}
                         </span>
                 </div>
                 {isExpanded && (
@@ -98,7 +97,7 @@ const JsonRenderer = ({ data, name }: JsonProps) => {
         );
     } else {
         return (
-            <div className = {styles.layout.primitiveRow} style={{ paddingLeft: 20 }}>
+            <div className = {styles.layout.dataRow} style={{ paddingLeft: 20 }}>
                 <span className={`${styles.text.key} ${styles.text.spacing.beforeValue}`}>{name}:</span>
                 {renderData(data)}
             </div>
@@ -109,7 +108,7 @@ const JsonRenderer = ({ data, name }: JsonProps) => {
 const Card = ({ data, title }: CardProps) => {
     return (
         <div className={styles.layout.card}>
-            <h1 className={styles.layout.title}>{title}</h1>
+            <div className={styles.layout.title}>{title}</div>
             <JsonRenderer data={data} name="RFP Information" />
         </div>
     );

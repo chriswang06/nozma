@@ -1,4 +1,4 @@
-// app/api/shutterfly/route.ts
+
 import clientPromise from "../../../lib/mongodb";
 
 export async function GET() {
@@ -8,10 +8,6 @@ export async function GET() {
     const collection = await db
       .collection("shutterfly")
       .find({})
-      .sort({ 
-        state: -1,  
-        updated_at: -1 
-      })
       .limit(20)
       .toArray();
     
