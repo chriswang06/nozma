@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 
 interface SearchBarProps {
     onSearch: (searchTerm: string) => void;
+    placeholder: string;
 }
 
 const styles = {
@@ -11,7 +12,7 @@ const styles = {
     input: "w-full p-3 border border-gray-300 rounded-lg",
 };
 
-function SearchBar({ onSearch }: SearchBarProps) {
+function SearchBar({ onSearch, placeholder}: SearchBarProps) {
     const [searchTerm, setSearchTerm] = useState('');
 
     const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -28,7 +29,7 @@ function SearchBar({ onSearch }: SearchBarProps) {
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 onKeyDown ={handleKeyDown}
-                placeholder="Search"
+                placeholder= {placeholder}
                 className={styles.input}
             />
         </div>

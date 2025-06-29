@@ -56,7 +56,7 @@ export default function Page() {
 
       {fullData && !loading && (
         <div className="mt-4">
-          <SearchBar onSearch={handleSearch}></SearchBar>
+          <SearchBar onSearch={handleSearch} placeholder = "Search Document"></SearchBar>
           <Card data={fullData}
             title={selectedItem?._id}
             searchTerm={searchTerm} />

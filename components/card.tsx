@@ -54,10 +54,10 @@ const JsonRenderer = ({ data, name, searchTerm = '', path = '' }: JsonProps) => 
     const [isExpanded, setExpanded] = useState(shouldExpand);
 
     useEffect(() => {
-        if (!searchTerm){
+        if (!searchTerm) {
             setExpanded(false);
         }
-        else{
+        else {
             setExpanded(containsSearchTerm(data));
         }
     }, [searchTerm, data])
@@ -69,24 +69,24 @@ const JsonRenderer = ({ data, name, searchTerm = '', path = '' }: JsonProps) => 
     const renderData = (value: any) => {
         if (value === null) return <span className={styles.data.null}>null</span>;
         if (value === undefined) return <span className={styles.data.null}>undefined</span>;
-        if (typeof value === 'boolean'){
+        if (typeof value === 'boolean') {
             const displayValue = value;
             if (searchTerm && value.toString().toLowerCase().includes(searchTerm.toLowerCase())) {
                 return <span className={`${styles.data.boolean} bg-yellow-200`}>{displayValue.toString()}</span>;
             }
-            return <span className = {styles.data.boolean}>{displayValue.toString()}</span>
+            return <span className={styles.data.boolean}>{displayValue.toString()}</span>
         }
         if (typeof value === 'number') {
             const displayValue = value;
             if (searchTerm && value.toString().toLowerCase().includes(searchTerm.toLowerCase())) {
                 return <span className={`${styles.data.number} bg-yellow-200`}>{displayValue.toString()}</span>;
             }
-            return <span className = {styles.data.number}>{displayValue.toString()}</span>
+            return <span className={styles.data.number}>{displayValue.toString()}</span>
         }
         if (typeof value === 'string') {
             const displayValue = value;
             if (searchTerm && value.toLowerCase().includes(searchTerm.toLowerCase())) {
-                return <span className={`${styles.data.string} bg-yellow-200`}>"{displayValue}"</span>;
+                return <span className={`${styles.data.string} bg-yellow-200`}>{displayValue}</span>;
             }
             return <span className={styles.data.string}>"{displayValue}"</span>;
         }
@@ -105,7 +105,7 @@ const JsonRenderer = ({ data, name, searchTerm = '', path = '' }: JsonProps) => 
                 {isExpanded && (
                     <div className={styles.layout.expandedContent} style={{ marginLeft: 20 }}>
                         {data.map((item, index) => (
-                            <JsonRenderer key={index} data={item} name={`[${index}]`} searchTerm = {searchTerm} path = {currentPath}/>
+                            <JsonRenderer key={index} data={item} name={`[${index}]`} searchTerm={searchTerm} path={currentPath} />
                         ))}
                     </div>
                 )}
@@ -123,7 +123,7 @@ const JsonRenderer = ({ data, name, searchTerm = '', path = '' }: JsonProps) => 
                 {isExpanded ? (
                     <div className={styles.layout.expandedContent} style={{ marginLeft: 20 }}>
                         {Object.entries(data).map(([key, value]) => (
-                            <JsonRenderer key={key} data={value} name={key} searchTerm = {searchTerm} path = {currentPath}/>
+                            <JsonRenderer key={key} data={value} name={key} searchTerm={searchTerm} path={currentPath} />
                         ))}
                     </div>
                 ) : null}
@@ -141,11 +141,18 @@ const JsonRenderer = ({ data, name, searchTerm = '', path = '' }: JsonProps) => 
     }
 };
 
-const Card = ({ data, title, searchTerm}: CardProps) => {
+const Card = ({ data, title, searchTerm }: CardProps) => {
     return (
         <div className={styles.layout.card}>
             <div className={styles.layout.title}>{title}</div>
-            <JsonRenderer data={data} searchTerm = {searchTerm} />
+            {Object.entries(data).map(([key, value]) => (
+                <JsonRenderer 
+                key={key} 
+                data = {value}
+                name = {key}
+                searchTerm={searchTerm} />
+            ))}
+
         </div>
     );
 };
