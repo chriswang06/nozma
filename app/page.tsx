@@ -1,34 +1,67 @@
+'use client';
 import Card from "@/components/card";
-import dbData from '../lib/db.json';
-export default async function Page() {
+import Dropdown from "@/components/dropdown"
+import SearchBar from "@/components/searchbar"
+import { useState, useEffect } from 'react';
 
-  const data = await fetch("http://localhost:3000/api/shutterfly");
-  
-  if (!data.ok){
-    return <div>failed to fetch data!</div>
-  }
-const posts = await data.json();
 
-// const posts = await dbData;
-  if (Array.isArray(posts)){
-    return (
-      <div className="grid gap-6 p-6">
-        <h1 className="text-3xl font-bold"></h1>
-        {posts.map((document, index) => (
-          <div key={document._id || index} className="mb-4">
-            <Card 
-              data={document} 
-              title={document.project_name ? `${document.client_name} - ${document.project_name}`: document.client_name}     
-            />
-          </div>
-        ))}
-      </div>
-    );
+interface Data {
+  _id: string;
+  name: string;
+  created_at?: string;
+}
+
+
+export default function Page() {
+  const [selectedItem, setSelectedItem] = useState<Data | null>(null);
+  const [data, setData] = useState<Data[]>([])
+  const [fullData, setFullData] = useState<any>(null);
+  const [loading, setLoading] = useState(false);
+  const [searchTerm, setSearchTerm] = useState<string>('');
+
+  useEffect(() => {
+    fetch('/api/shutterfly/ids')
+      .then(res => res.json())
+      .then(data => {
+        setData(data);
+      })
+      .catch(err => {
+        console.error('Error:', err);
+      });
+  }, []);
+
+  const handleSelect = async (item: Data) => {
+    setSelectedItem(item);
+    setLoading(true);
+    setSearchTerm('');
+
+    try {
+      const response = await fetch(`/api/shutterfly/${item._id}`);
+      const fullDocument = await response.json();
+      setFullData(fullDocument);
+    } catch (err) {
+      console.error('Error fetching full document:', err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleSearch = (term: string) => {
+    setSearchTerm(term);
   }
   return (
     <div className="p-6">
-      <h1 className="text-3xl font-bold mb-6">RFP Analysis</h1>
-      <Card data={posts} title={`${posts.client_name} RFP`} />
+      <Dropdown data={data} onSelect={handleSelect} />
+      {loading && <div className="mt-4">Loading...</div>}
+
+      {fullData && !loading && (
+        <div className="mt-4">
+          <SearchBar onSearch={handleSearch}></SearchBar>
+          <Card data={fullData}
+            title={selectedItem?._id}
+            searchTerm={searchTerm} />
+        </div>
+      )}
     </div>
-  );
+  )
 }
