@@ -37,8 +37,8 @@ export default function Page() {
 
     try {
       const response = await fetch(`/api/shutterfly/${item._id}`);
-      const fullDocument = await response.json();
-      setFullData(fullDocument);
+      const fullData = await response.json();
+      setFullData(fullData);
     } catch (err) {
       console.error('Error fetching full document:', err);
     } finally {
@@ -51,7 +51,16 @@ export default function Page() {
   }
   return (
     <div className="p-6">
-      <Dropdown data={data} onSelect={handleSelect} />
+      { fullData && !loading ?  
+      <div>
+        <Dropdown data={data} onSelect={handleSelect} />
+      </div>
+      :
+      <div className = "min-h-screen flex justify-center items-center">
+          <Dropdown data={data} onSelect={handleSelect} />
+      </div>
+    }
+      
       {loading && <div className="mt-4">Loading...</div>}
 
       {fullData && !loading && (

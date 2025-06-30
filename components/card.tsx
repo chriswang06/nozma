@@ -39,12 +39,9 @@ interface JsonProps {
     data: any;
     name?: string;
     searchTerm?: string;
-    path?: string;
 }
 
-const JsonRenderer = ({ data, name, searchTerm = '', path = '' }: JsonProps) => {
-
-    const currentPath = path ? '${path}.${name}' : name || '';
+const JsonRenderer = ({ data, name, searchTerm = ''}: JsonProps) => {
 
     const containsSearchTerm = (obj: any): boolean => {
         if (!searchTerm) return false;
@@ -105,7 +102,7 @@ const JsonRenderer = ({ data, name, searchTerm = '', path = '' }: JsonProps) => 
                 {isExpanded && (
                     <div className={styles.layout.expandedContent} style={{ marginLeft: 20 }}>
                         {data.map((item, index) => (
-                            <JsonRenderer key={index} data={item} name={`[${index}]`} searchTerm={searchTerm} path={currentPath} />
+                            <JsonRenderer key={index} data={item} name={`[${index}]`} searchTerm={searchTerm} />
                         ))}
                     </div>
                 )}
@@ -123,7 +120,7 @@ const JsonRenderer = ({ data, name, searchTerm = '', path = '' }: JsonProps) => 
                 {isExpanded ? (
                     <div className={styles.layout.expandedContent} style={{ marginLeft: 20 }}>
                         {Object.entries(data).map(([key, value]) => (
-                            <JsonRenderer key={key} data={value} name={key} searchTerm={searchTerm} path={currentPath} />
+                            <JsonRenderer key={key} data={value} name={key} searchTerm={searchTerm} />
                         ))}
                     </div>
                 ) : null}

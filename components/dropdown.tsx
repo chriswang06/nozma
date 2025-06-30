@@ -16,10 +16,9 @@ const styles = {
   container: "relative w-full max-w-md",
   input: "w-full p-3 border border-gray-300 rounded-lg cursor-pointer",
   dropdown: "absolute top-full mt-1 w-full max-h-60 overflow-y-auto bg-white border border-gray-300 rounded-lg shadow-lg z-50",
-  item: "p-3 hover:bg-gray-100 cursor-pointer border-b last:border-0",
-  itemName: "font-medium",
-  itemId: "text-sm text-gray-500",
-  itemCreatedAt: "text-sm text-gray-400"
+  item: "p-3 hover:bg-gray-100 cursor-pointer border-b",
+  itemHeader: "font-medium",
+  itemSub: "text-sm text-gray-500",
 };
 
 function Dropdown( {data, onSelect} : SearchDropdownProps){
@@ -61,9 +60,9 @@ function Dropdown( {data, onSelect} : SearchDropdownProps){
               onClick={() => handleSelect(item)}
               className={styles.item}
             >
-              <div className={styles.itemName}>{item.name}</div>
-              <div className={styles.itemId}>{item._id}</div>
-              <div className= {styles.itemCreatedAt}>{item.created_at}</div>
+              <div className={styles.itemHeader}>{item.name}</div>
+              <div className={styles.itemSub}>{item._id}</div>
+              <div className= {styles.itemSub}>{item.created_at}</div>
             </div>
           ))}
         </div>
