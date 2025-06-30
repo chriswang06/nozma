@@ -16,7 +16,7 @@ const styles = {
         expandedContent: "border-l border-gray-200 ml-2 pl-3",
         dataRow: "py-0.5 flex items-center",
         card: "font-sans text-sm leading-relaxed text-gray-900 bg-white p-5 rounded-md border border-gray-200 shadow-sm max-w-full overflow-auto",
-        title: "text-2xl font-semibold mt-0 mb-5"
+        title: "text-2xl font-semibold mt-0 mb-5",
     },
     text: {
         key: "font-semibold",
@@ -33,30 +33,40 @@ interface CardProps {
     data: any;
     title?: string;
     searchTerm?: string;
+    expandAll?: boolean | null;
 }
 
 interface JsonProps {
     data: any;
     name?: string;
     searchTerm?: string;
+    expandAll?: boolean | null;
 }
 
-const JsonRenderer = ({ data, name, searchTerm = ''}: JsonProps) => {
+const JsonRenderer = ({ data, name, searchTerm, expandAll }: JsonProps) => {
 
-    const containsSearchTerm = (obj: any): boolean => {
+    const containsSearch = (obj: any): boolean => {
         if (!searchTerm) return false;
         return JSON.stringify(obj).toLowerCase().includes(searchTerm.toLowerCase());
     }
-    const shouldExpand = searchTerm && containsSearchTerm(data);
+    const shouldExpand = searchTerm && containsSearch(data);
     const [isExpanded, setExpanded] = useState(shouldExpand);
 
     useEffect(() => {
-        if (!searchTerm) {
-            setExpanded(false);
+        if (expandAll !== null) {
+            setExpanded(expandAll);
         }
-        else {
-            setExpanded(containsSearchTerm(data));
+    }, [expandAll])
+    useEffect(() => {
+        if (expandAll === null) {
+            if (!searchTerm) {
+                setExpanded(false);
+            }
+            else {
+                setExpanded(containsSearch(data));
+            }
         }
+
     }, [searchTerm, data])
 
     const toggleExpanded = () => {
@@ -85,7 +95,10 @@ const JsonRenderer = ({ data, name, searchTerm = ''}: JsonProps) => {
             if (searchTerm && value.toLowerCase().includes(searchTerm.toLowerCase())) {
                 return <span className={`${styles.data.string} bg-yellow-200`}>{displayValue}</span>;
             }
-            return <span className={styles.data.string}>"{displayValue}"</span>;
+            return <span className={styles.data.string}>{displayValue}</span>;
+        }
+        if (searchTerm && value.toLowerCase().includes(searchTerm.toLowerCase())) {
+            return <span className={`${styles.data.default} bg-yellow-200`}>{String(value)}</span>;
         }
         return <span className={styles.data.default}>{String(value)}</span>;
     };
@@ -95,14 +108,19 @@ const JsonRenderer = ({ data, name, searchTerm = ''}: JsonProps) => {
             <div>
                 <div onClick={toggleExpanded} className={styles.layout.expandableHeader} style={{ paddingLeft: 20 }}>
                     {isExpanded ? <ChevronDown size={14} /> : <ChevronRight size={14} />}
-                    {name && <span className={`${styles.text.key} ${styles.text.spacing.afterIcon}`}>{name}:</span>}
+                    {name && <span className={`${styles.text.key} ${styles.text.spacing.afterIcon}`}>{renderData(name)}:</span>}
                     <span className={`${styles.text.type} ${styles.text.spacing.afterKey}`}>
                     </span>
                 </div>
                 {isExpanded && (
                     <div className={styles.layout.expandedContent} style={{ marginLeft: 20 }}>
                         {data.map((item, index) => (
-                            <JsonRenderer key={index} data={item} name={`[${index}]`} searchTerm={searchTerm} />
+                            <JsonRenderer
+                                key={index}
+                                data={item}
+                                name={`[${index}]`}
+                                searchTerm={searchTerm}
+                                expandAll={expandAll} />
                         ))}
                     </div>
                 )}
@@ -113,14 +131,19 @@ const JsonRenderer = ({ data, name, searchTerm = ''}: JsonProps) => {
             <div>
                 <div onClick={toggleExpanded} className={styles.layout.expandableHeader} style={{ paddingLeft: 20 }}>
                     {isExpanded ? <ChevronDown size={14} /> : <ChevronRight size={14} />}
-                    {name && <span className={`${styles.text.key} ${styles.text.spacing.afterIcon}`}>{name}:</span>}
+                    {name && <span className={`${styles.text.key} ${styles.text.spacing.afterIcon}`}>{renderData(name)}:</span>}
                     <span className={`${styles.text.type} ${styles.text.spacing.afterKey}`}></span>
                     {!isExpanded && <span className={`${styles.text.type} ${styles.text.spacing.afterIcon}`}>...</span>}
                 </div>
                 {isExpanded ? (
                     <div className={styles.layout.expandedContent} style={{ marginLeft: 20 }}>
                         {Object.entries(data).map(([key, value]) => (
-                            <JsonRenderer key={key} data={value} name={key} searchTerm={searchTerm} />
+                            <JsonRenderer
+                                key={key}
+                                data={value}
+                                name={key}
+                                searchTerm={searchTerm}
+                                expandAll={expandAll} />
                         ))}
                     </div>
                 ) : null}
@@ -131,24 +154,29 @@ const JsonRenderer = ({ data, name, searchTerm = ''}: JsonProps) => {
 
         return (
             <div className={styles.layout.dataRow} style={{ marginLeft: 20 }}>
-                <span className={`${styles.text.key} ${styles.text.spacing.beforeValue}`}>{name}:</span>
+                <span className={`${styles.text.key} ${styles.text.spacing.beforeValue}`}>{renderData(name)}:</span>
                 {renderData(data)}
             </div>
         );
     }
 };
 
-const Card = ({ data, title, searchTerm }: CardProps) => {
+const Card = ({ data, title, searchTerm, expandAll }: CardProps) => {
     return (
         <div className={styles.layout.card}>
             <div className={styles.layout.title}>{title}</div>
-            {Object.entries(data).map(([key, value]) => (
+            {/* {Object.entries(data).map(([key, value]) => (
                 <JsonRenderer 
                 key={key} 
                 data = {value}
                 name = {key}
                 searchTerm={searchTerm} />
-            ))}
+            ))} */}
+            <JsonRenderer
+                data={data}
+                name={"File"}
+                searchTerm={searchTerm}
+                expandAll={expandAll} />
 
         </div>
     );

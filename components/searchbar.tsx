@@ -8,7 +8,7 @@ interface SearchBarProps {
 }
 
 const styles = {
-    container: "w-full max-w-md",
+    container: "flex gap-2 mb-4 w-full max-w-[14rem]",
     input: "w-full p-3 border border-gray-300 rounded-lg",
 };
 

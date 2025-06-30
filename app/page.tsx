@@ -10,7 +10,10 @@ interface Data {
   name: string;
   created_at?: string;
 }
-
+const styles = {
+  container: "flex gap-2 mb-4",
+  button: "w-27 px-4 py-2 text-sm font-medium rounded-md border transition-colors duration-150 hover:bg-gray-50",
+}
 
 export default function Page() {
   const [selectedItem, setSelectedItem] = useState<Data | null>(null);
@@ -18,6 +21,7 @@ export default function Page() {
   const [fullData, setFullData] = useState<any>(null);
   const [loading, setLoading] = useState(false);
   const [searchTerm, setSearchTerm] = useState<string>('');
+  const [expandAll, setExpandAll] = useState<boolean | null>(null);
 
   useEffect(() => {
     fetch('/api/shutterfly/ids')
@@ -48,6 +52,15 @@ export default function Page() {
 
   const handleSearch = (term: string) => {
     setSearchTerm(term);
+    setExpandAll(null);
+  }
+  const expandAllFunc = () => {
+    setExpandAll(true);
+    setSearchTerm('');
+  }
+  const hideAllFunc = () => {
+    setExpandAll(false);
+    setSearchTerm('');
   }
   return (
     <div className="p-6">
@@ -64,11 +77,23 @@ export default function Page() {
       {loading && <div className="mt-4">Loading...</div>}
 
       {fullData && !loading && (
-        <div className="mt-4">
-          <SearchBar onSearch={handleSearch} placeholder = "Search Document"></SearchBar>
+        <div className={"mt-4"}>
+          <div className = {styles.container}>
+          <SearchBar onSearch={handleSearch} placeholder = "Search Keys"></SearchBar>
+          <SearchBar onSearch={handleSearch} placeholder = "Search Values"></SearchBar>
+          </div>
+          <div className = {styles.container}>
+            <button 
+            className = {styles.button}
+            onClick = {expandAllFunc}>Expand All</button>
+            <button 
+            className = {styles.button}
+            onClick = {hideAllFunc}> Hide All</button>
+          </div>
           <Card data={fullData}
             title={selectedItem?._id}
-            searchTerm={searchTerm} />
+            searchTerm={searchTerm} 
+            expandAll = {expandAll}/>
         </div>
       )}
     </div>
