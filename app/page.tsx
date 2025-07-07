@@ -20,7 +20,8 @@ export default function Page() {
   const [data, setData] = useState<Data[]>([])
   const [fullData, setFullData] = useState<any>(null);
   const [loading, setLoading] = useState(false);
-  const [searchTerm, setSearchTerm] = useState<string>('');
+  const [searchTermKey, setSearchTermKey] = useState<string>('');
+  const [searchTermValue, setSearchTermValue] = useState<string>('');
   const [expandAll, setExpandAll] = useState<boolean | null>(null);
 
   useEffect(() => {
@@ -37,7 +38,8 @@ export default function Page() {
   const handleSelect = async (item: Data) => {
     setSelectedItem(item);
     setLoading(true);
-    setSearchTerm('');
+    setSearchTermKey('');
+    setSearchTermValue('')
 
     try {
       const response = await fetch(`/api/shutterfly/${item._id}`);
@@ -50,50 +52,58 @@ export default function Page() {
     }
   };
 
-  const handleSearch = (term: string) => {
-    setSearchTerm(term);
+  const handleSearchKey = (searchTermKey: string) => {
+    setSearchTermKey(searchTermKey);
+    setExpandAll(null);
+  }
+  const handleSearchValue = (searchTermValue: string) => {
+    setSearchTermValue(searchTermValue);
     setExpandAll(null);
   }
   const expandAllFunc = () => {
     setExpandAll(true);
-    setSearchTerm('');
+    setSearchTermValue('');
+    setSearchTermKey('');
+
   }
   const hideAllFunc = () => {
     setExpandAll(false);
-    setSearchTerm('');
+    setSearchTermValue('');
+    setSearchTermKey('');
   }
   return (
     <div className="p-6">
-      { fullData && !loading ?  
-      <div>
-        <Dropdown data={data} onSelect={handleSelect} />
-      </div>
-      :
-      <div className = "min-h-screen flex justify-center items-center">
+      {fullData && !loading ?
+        <div>
           <Dropdown data={data} onSelect={handleSelect} />
-      </div>
-    }
-      
+        </div>
+        :
+        <div className="min-h-screen flex justify-center items-center">
+          <Dropdown data={data} onSelect={handleSelect} />
+        </div>
+      }
+
       {loading && <div className="mt-4">Loading...</div>}
 
       {fullData && !loading && (
         <div className={"mt-4"}>
-          <div className = {styles.container}>
-          <SearchBar onSearch={handleSearch} placeholder = "Search Keys"></SearchBar>
-          <SearchBar onSearch={handleSearch} placeholder = "Search Values"></SearchBar>
+          <div className={styles.container}>
+            <SearchBar onSearch={handleSearchKey} placeholder="Search Keys"></SearchBar>
+            <SearchBar onSearch={handleSearchValue} placeholder="Search Values"></SearchBar>
           </div>
-          <div className = {styles.container}>
-            <button 
-            className = {styles.button}
-            onClick = {expandAllFunc}>Expand All</button>
-            <button 
-            className = {styles.button}
-            onClick = {hideAllFunc}> Hide All</button>
+          <div className={styles.container}>
+            <button
+              className={styles.button}
+              onClick={expandAllFunc}>Expand All</button>
+            <button
+              className={styles.button}
+              onClick={hideAllFunc}> Hide All</button>
           </div>
           <Card data={fullData}
             title={selectedItem?._id}
-            searchTerm={searchTerm} 
-            expandAll = {expandAll}/>
+            searchTermKey={searchTermKey}
+            searchTermValue={searchTermValue}
+            expandAll={expandAll} />
         </div>
       )}
     </div>

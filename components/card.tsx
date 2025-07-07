@@ -32,24 +32,74 @@ const styles = {
 interface CardProps {
     data: any;
     title?: string;
-    searchTerm?: string;
+    searchTermKey?: string;
+    searchTermValue?: string;
     expandAll?: boolean | null;
 }
 
 interface JsonProps {
     data: any;
     name?: string;
-    searchTerm?: string;
+    searchTermKey?: string;
+    searchTermValue?: string;
     expandAll?: boolean | null;
 }
 
-const JsonRenderer = ({ data, name, searchTerm, expandAll }: JsonProps) => {
+const JsonRenderer = ({ data, name, searchTermKey, searchTermValue, expandAll }: JsonProps) => {
+
+    const matchesSearch = (str: string, searchTerm: string): boolean => {
+        if (!searchTerm) return false;
+        if (searchTerm.startsWith("/")) {
+            try {
+                const endPatternIndex = searchTerm.lastIndexOf("/");
+                if (endPatternIndex > 0) {
+                    const pattern = searchTerm.slice(1, endPatternIndex);
+                    const flags = searchTerm.slice(endPatternIndex + 1);
+                    const regex = new RegExp(pattern, flags);
+                    return regex.test(str);
+                }
+            } catch (e) {
+                return str.toLowerCase().includes(searchTerm.toLowerCase());
+            }
+        }
+        return str.toLowerCase().includes(searchTerm.toLowerCase());
+
+    };
+
+    const containsSearchInKeys = (obj: any): boolean => {
+        if (!searchTermKey) return false;
+        const checkKeys = (o: any): boolean => {
+            if (typeof o === "object" && o !== null) {
+                return Object.keys(o).some(key =>
+                    matchesSearch(key, searchTermKey) || checkKeys(o[key])
+                );
+            }
+            return false;
+        };
+        return checkKeys(obj);
+    }
+
+    const containsSearchInValues = (obj: any): boolean => {
+        if (!searchTermValue) return false;
+        const checkValues = (o: any): boolean => {
+            if (Array.isArray(o)) {
+                return o.some(item => checkValues(item));
+            } else if (typeof o === 'object' && o !== null) {
+                return Object.values(o).some(value => checkValues(value));
+            } else {
+                return matchesSearch(String(o), searchTermValue);
+            }
+        };
+        return checkValues(obj);
+    }
 
     const containsSearch = (obj: any): boolean => {
-        if (!searchTerm) return false;
-        return JSON.stringify(obj).toLowerCase().includes(searchTerm.toLowerCase());
+        if (searchTermKey && searchTermValue) {
+            return containsSearchInKeys(obj) && containsSearchInValues(obj);
+        }
+        return containsSearchInKeys(obj) || containsSearchInValues(obj);
     }
-    const shouldExpand = searchTerm && containsSearch(data);
+    const shouldExpand = (searchTermValue || searchTermKey) && containsSearch(data);
     const [isExpanded, setExpanded] = useState(shouldExpand);
 
     useEffect(() => {
@@ -57,58 +107,42 @@ const JsonRenderer = ({ data, name, searchTerm, expandAll }: JsonProps) => {
             setExpanded(expandAll);
         }
     }, [expandAll])
+
     useEffect(() => {
         if (expandAll === null) {
-            if (!searchTerm) {
-                setExpanded(false);
-            }
-            else {
-                setExpanded(containsSearch(data));
-            }
+            setExpanded(containsSearch(data));
         }
 
-    }, [searchTerm, data])
+    }, [searchTermKey, searchTermValue, data])
 
     const toggleExpanded = () => {
         setExpanded(!isExpanded);
     }
 
-    const renderData = (value: any) => {
+    const renderData = (value: any, isKey: boolean = false) => {
+
+        const searchTerm = isKey ? searchTermKey : searchTermValue;
+
         if (value === null) return <span className={styles.data.null}>null</span>;
         if (value === undefined) return <span className={styles.data.null}>undefined</span>;
-        if (typeof value === 'boolean') {
-            const displayValue = value;
-            if (searchTerm && value.toString().toLowerCase().includes(searchTerm.toLowerCase())) {
-                return <span className={`${styles.data.boolean} bg-yellow-200`}>{displayValue.toString()}</span>;
-            }
-            return <span className={styles.data.boolean}>{displayValue.toString()}</span>
-        }
-        if (typeof value === 'number') {
-            const displayValue = value;
-            if (searchTerm && value.toString().toLowerCase().includes(searchTerm.toLowerCase())) {
-                return <span className={`${styles.data.number} bg-yellow-200`}>{displayValue.toString()}</span>;
-            }
-            return <span className={styles.data.number}>{displayValue.toString()}</span>
-        }
-        if (typeof value === 'string') {
-            const displayValue = value;
-            if (searchTerm && value.toLowerCase().includes(searchTerm.toLowerCase())) {
-                return <span className={`${styles.data.string} bg-yellow-200`}>{displayValue}</span>;
-            }
-            return <span className={styles.data.string}>{displayValue}</span>;
-        }
-        if (searchTerm && value.toLowerCase().includes(searchTerm.toLowerCase())) {
-            return <span className={`${styles.data.default} bg-yellow-200`}>{String(value)}</span>;
-        }
-        return <span className={styles.data.default}>{String(value)}</span>;
-    };
 
+        const valueStr = String(value);
+        const shouldHighlight = searchTerm && matchesSearch(valueStr, searchTerm);
+
+        let className = styles.data.default;
+        if (typeof value === 'boolean' || typeof value === 'string' || typeof value === "number") className = styles.data.string;
+
+        return (
+            <span className={shouldHighlight ? `${className} bg-yellow-400` : className}> {valueStr}</span>
+        );
+
+    }
     if (Array.isArray(data)) {
         return (
             <div>
                 <div onClick={toggleExpanded} className={styles.layout.expandableHeader} style={{ paddingLeft: 20 }}>
                     {isExpanded ? <ChevronDown size={14} /> : <ChevronRight size={14} />}
-                    {name && <span className={`${styles.text.key} ${styles.text.spacing.afterIcon}`}>{renderData(name)}:</span>}
+                    {name && <span className={`${styles.text.key} ${styles.text.spacing.afterIcon}`}>{renderData(name, true)}:</span>}
                     <span className={`${styles.text.type} ${styles.text.spacing.afterKey}`}>
                     </span>
                 </div>
@@ -119,7 +153,8 @@ const JsonRenderer = ({ data, name, searchTerm, expandAll }: JsonProps) => {
                                 key={index}
                                 data={item}
                                 name={`[${index}]`}
-                                searchTerm={searchTerm}
+                                searchTermKey={searchTermKey}
+                                searchTermValue={searchTermValue}
                                 expandAll={expandAll} />
                         ))}
                     </div>
@@ -131,7 +166,7 @@ const JsonRenderer = ({ data, name, searchTerm, expandAll }: JsonProps) => {
             <div>
                 <div onClick={toggleExpanded} className={styles.layout.expandableHeader} style={{ paddingLeft: 20 }}>
                     {isExpanded ? <ChevronDown size={14} /> : <ChevronRight size={14} />}
-                    {name && <span className={`${styles.text.key} ${styles.text.spacing.afterIcon}`}>{renderData(name)}:</span>}
+                    {name && <span className={`${styles.text.key} ${styles.text.spacing.afterIcon}`}>{renderData(name, true)}:</span>}
                     <span className={`${styles.text.type} ${styles.text.spacing.afterKey}`}></span>
                     {!isExpanded && <span className={`${styles.text.type} ${styles.text.spacing.afterIcon}`}>...</span>}
                 </div>
@@ -142,7 +177,8 @@ const JsonRenderer = ({ data, name, searchTerm, expandAll }: JsonProps) => {
                                 key={key}
                                 data={value}
                                 name={key}
-                                searchTerm={searchTerm}
+                                searchTermKey={searchTermKey}
+                                searchTermValue={searchTermValue}
                                 expandAll={expandAll} />
                         ))}
                     </div>
@@ -150,18 +186,16 @@ const JsonRenderer = ({ data, name, searchTerm, expandAll }: JsonProps) => {
             </div>
         );
     } else {
-        const keyHighlight = searchTerm && name && name.toLowerCase().includes(searchTerm.toLowerCase());
-
         return (
             <div className={styles.layout.dataRow} style={{ marginLeft: 20 }}>
-                <span className={`${styles.text.key} ${styles.text.spacing.beforeValue}`}>{renderData(name)}:</span>
-                {renderData(data)}
+                <span className={`${styles.text.key} ${styles.text.spacing.beforeValue}`}>{renderData(name, true)}:</span>
+                {renderData(data, false)}
             </div>
         );
     }
 };
 
-const Card = ({ data, title, searchTerm, expandAll }: CardProps) => {
+const Card = ({ data, title, searchTermKey, searchTermValue, expandAll }: CardProps) => {
     return (
         <div className={styles.layout.card}>
             <div className={styles.layout.title}>{title}</div>
@@ -175,7 +209,8 @@ const Card = ({ data, title, searchTerm, expandAll }: CardProps) => {
             <JsonRenderer
                 data={data}
                 name={"File"}
-                searchTerm={searchTerm}
+                searchTermKey={searchTermKey}
+                searchTermValue={searchTermValue}
                 expandAll={expandAll} />
 
         </div>
